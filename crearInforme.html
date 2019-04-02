@@ -1,0 +1,3439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Informe de inspeccion INGETECH</title>
+
+<!-- Bootstrap -->
+<link rel="stylesheet" href="css/bootstrap.css">
+<link rel="stylesheet" href="css/home.css">
+<link rel="stylesheet" href="css/print.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<nav class="navbar navbar-default">
+  <div class="container-fluid"> 
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+      <a class="navbar-brand" href="http://www.ingetechsas.com">Ingetech </a> </div>
+    
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+<!--
+        <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a> </li>-->
+        <li><a href="#"><img src="images/logo.png" width="50" height="20" alt=""/></a> </li>
+
+      </ul>
+<!--
+      <form class="navbar-form navbar-right" role="search">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search">
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">Link</a> </li>
+        <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a> </li>
+            <li><a href="#">Another action</a> </li>
+            <li><a href="#">Something else here</a> </li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Separated link</a> </li>
+          </ul>
+        </li>
+      </ul>
+-->
+    </div>
+    <!-- /.navbar-collapse --> 
+  </div>
+  <!-- /.container-fluid --> 
+</nav>
+
+<!-- HEADER -->
+<header>
+  <div class="jumbotron">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <h1 class="text-center hola" id="hola">Crear informe de inspección
+			</h1>
+          <p class="text-center">Este formulario solo puede ser usado para fines laborales afines a la empresa Ingetech SAS.</p>
+          <p>&nbsp;</p>
+<!--          <p class="text-center"><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a> </p>-->
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<!-- / HEADER --> 
+<ul class="nav nav-pills nav-justified" id="myTab" role="tablist">
+  <li class="nav-item active">
+	  <a data-toggle="pill" href="#general_tab">GENERAL</a>
+  </li>
+  <li class="nav-item disabled">
+	  <a data-toggle="pill" >EVALUACIÓN DE RIESGOS</a>
+  </li>
+  <li class="nav-item disabled">
+	   <a data-toggle="pill" >RECOMENDACIONES</a>
+  </li>
+</ul>
+<div class="tab-content" id="myTabContent">
+	<div class="tab-pane fade in active" id="general_tab" >
+	<!--  SECTION-1 -->
+		<form id="general_form">
+		<section class="formulario">
+		  <div class="row">
+			<div class="col-lg-12 page-header text-center">
+			  <h1>General</h1>
+			</div>
+		  </div>
+		  <div class="container">
+			<div class="row">
+			  <div class="col-lg-4 col-sm-6 text-left">
+				<p><b>Aseguradora</b></p>
+			  </div>
+			  <div class="col-lg-6 col-sm-6 text-center">
+				  <div class="input-group">
+					 <div class="input-group-addon">
+						 <i class="fa fa-building"></i>
+					 </div> <input class="form-control" type="text" name="aseguradora" maxlength="40">
+				  </div>
+
+			  </div>
+			</div>
+			<div class="row">
+			  <div class="col-lg-4 col-sm-6 text-left">
+				<p><b>Ciudad</b></p>
+			  </div>
+			  <div class="col-lg-6 col-sm-6 text-center">
+				  <div class="input-group">
+					 <div class="input-group-addon">
+						 <i class="fa fa-globe"></i>
+					 </div>
+					  <input  class="form-control" type="text" name="ciudad"  maxlength="20"></div>
+			  </div>
+			</div>
+			<div class="row">
+			  <div class="col-lg-4 col-sm-6 text-left">
+				<p><b>Consecutivo de la Visita</b></p>
+			  </div>
+			  <div class="col-lg-6 col-sm-6 text-center">
+				  <div class="input-group">
+					 <div class="input-group-addon">
+						 <i class="fa fa-hashtag"></i>
+					 </div>
+					  <input class="form-control" type="number" name="consecutivo_visita"  min="1" max="99999">
+				  </div>
+			  </div>
+			</div>  
+			<div class="row">
+			  <div class="col-lg-4 col-sm-6 text-left">
+				<p><b>Tipo de riesgo</b></p>
+			  </div>
+			  <div class="col-lg-6 col-sm-6 text-center">
+				  <div class="input-group">
+				  <div class="input-group-addon">
+						 <i class="fa fa-exclamation-triangle"></i>
+					 </div>
+				  <input class="form-control" type="text" name="tipo_riesgo" maxlength="30"></div>
+			  </div> 
+			</div> 
+			<div class="row">
+			  <div class="col-lg-4 col-sm-6 text-left">
+				<p><b>Cliente</b></p>
+			  </div>
+			  <div class="col-lg-6 col-sm-6 text-center">
+				   <div class="input-group">
+				  <div class="input-group-addon">
+						 <i class="fa fa-users"></i>
+					 </div>
+					   <input  class="form-control" type="text" name="cliente"  maxlength="50"></div> 
+			  </div>
+			</div> 
+	<!--
+			<div class="row">
+			  <div class="col-lg-4 col-sm-6 text-left">
+				<p><b>Fotografía Vista General del predio principal </b></p>
+			  </div>
+			  <div class="col-lg-6 col-sm-6 text-center">
+					<div class="input-group">
+				  <div class="input-group-addon">
+						 <i class="fa fa-image"></i>
+					 </div>
+				  <input   class="form-control" type="file" id="foto_general" name="foto_general" accept="image/jpeg" onchange="loadFile(event)" ></div> 
+						<img id="output" width="100" length="100"/>
+					<script>
+					  var loadFile = function(event) {
+						var output = document.getElementById('output');
+						output.src = URL.createObjectURL(event.target.files[0]);
+					  };
+					</script>
+			  </div>
+			</div> 
+	-->
+			<div class="row">
+			  <div class="col-lg-4 col-sm-6 text-left">
+				<p><b>Intermediario</b></p>
+			  </div>
+			  <div class="col-lg-6 col-sm-6 text-center">
+				  <div class="input-group">
+				  <div class="input-group-addon">
+						<i class="fa fa-arrows-alt"></i>
+					 </div>  
+					  <input class="form-control" type="text" name="intermediario"  maxlength="30"></div>
+			  </div>
+			</div>
+			<div class="row">
+			  <div class="col-lg-4 col-sm-6 text-left">
+				<p><b>Fecha Asignación</b></p>
+			  </div>
+			  <div class="col-lg-6 col-sm-6 text-center">
+				  <div class="input-group">
+				  <div class="input-group-addon">
+						<i class="fa fa-calendar-o"></i>
+					 </div>  
+					  <input class="form-control" type="date" name="fecha_asigancion"  ></div>
+			  </div>
+			</div>  
+			<div class="row">
+			  <div class="col-lg-4 col-sm-6 text-left">
+				<p><b>Fecha Inspección</b></p>
+			  </div>
+			  <div class="col-lg-6 col-sm-6 text-center">
+				  <div class="input-group">
+				  <div class="input-group-addon">
+						<i class="fa fa-calendar-o"></i>
+					 </div>  
+					  <input class="form-control" type="date" name="fecha_inspeccion"  ></div>
+			  </div>
+			</div>
+			<div class="row">
+			  <div class="col-lg-4 col-sm-6 text-left">
+				<p><b>Ordenado por</b></p>
+			  </div>
+			  <div class="col-lg-6 col-sm-6 text-center">
+				  <div class="input-group">
+				  <div class="input-group-addon">
+						 <i class="fa fa-user-secret"></i>
+					 </div>
+					  <input  class="form-control" type="text" name="ordenado_por"  maxlength="30"></div>
+			  </div>
+			</div>
+			<div class="row">
+			  <div class="col-lg-4 col-sm-6 text-left">
+				<p><b>Inspector</b></p>
+			  </div>
+			  <div class="col-lg-6 col-sm-6 text-center">
+				  <div class="input-group">
+				  <div class="input-group-addon">
+						 <i class="fa fa-user"></i>
+					 </div>
+					  <input  class="form-control" type="text" name="inspector"   maxlength="30"></div>
+			  </div>
+			</div> 
+		  </div>
+
+
+		 <div class="row">
+			<div class="col-lg-12 page-header text-center">
+			  <h2>1. Información general del riesgo</h2>
+			</div>
+		  </div>
+		  <div class="container">
+			<div class="row">
+			  <div class="col-lg-4 col-sm-6 text-left">
+				<p><b>Asegurado</b></p>
+			  </div>
+			  <div class="col-lg-6 col-sm-6 text-center">
+				  <div class="input-group">
+				  <div class="input-group-addon">
+						 <i class="fa fa-user-circle-o"></i>
+					 </div>
+					  <input class="form-control" type="text" name="asegurado" maxlength="40"></div>
+			  </div>
+			</div>
+			<div class="row">
+			  <div class="col-lg-4 col-sm-6 text-left">
+				<p><b>NIT</b></p>
+			  </div>
+			  <div class="col-lg-6 col-sm-6 text-center">
+				  <div class="input-group">
+				  <div class="input-group-addon">
+						 <i class="fa fa-hashtag"></i>
+					 </div>
+					  <input  class="form-control" type="number" name="nit"  min="1" max="999999999999999"></div>
+			  </div>
+			</div>
+			<div class="row">
+			  <div class="col-lg-4 col-sm-6 text-left">
+				<p><b>Dirección</b></p>
+			  </div>
+			  <div class="col-lg-6 col-sm-6 text-center">
+				  <div class="input-group">
+				  <div class="input-group-addon">
+						 <i class="fa fa-building"></i>
+					 </div>
+					  <input class="form-control" type="text" name="direccion" maxlength="40"></div>
+			  </div>
+			</div>  
+			<div class="row">
+			  <div class="col-lg-4 col-sm-6 text-left">
+				<p><b>Estrato</b></p>
+			  </div>
+			  <div class="col-lg-6 col-sm-6 text-center">
+				  <div class="input-group">
+				  <div class="input-group-addon">
+						 <i class="fa fa-hashtag"></i>
+					 </div>
+				  <input class="form-control" type="number" name="estrato" min="1" max="9"></div>
+			  </div>
+			</div> 
+			<div class="row">
+			  <div class="col-lg-4 col-sm-6 text-left">
+				<p><b>Ciudad</b></p>
+			  </div>
+			  <div class="col-lg-6 col-sm-6 text-center">
+				  <div class="input-group">
+				  <div class="input-group-addon">
+						 <i class="fa fa-globe"></i>
+					 </div>
+					  <input  class="form-control" type="text" name="ciudad_riesgo" maxlength="30"></div>
+			  </div>
+			</div>
+			<div class="row">
+			  <div class="col-lg-4 col-sm-6 text-left">
+				<p><b>Departamento</b></p>
+			  </div>
+			  <div class="col-lg-6 col-sm-6 text-center">
+				  <div class="input-group">
+				  <div class="input-group-addon">
+						 <i class="fa fa-globe"></i>
+					 </div>
+					  <input  class="form-control" type="text" name="departamento" maxlength="30"></div>
+			  </div>
+			</div>   
+			<div class="row">
+			  <div class="col-lg-4 col-sm-6 text-left">
+				<p><b>Teléfono</b></p>
+			  </div>
+			  <div class="col-lg-6 col-sm-6 text-center">
+				  <div class="input-group">
+				  <div class="input-group-addon">
+						 <i class="fa fa-phone"></i>
+					 </div>
+					  <input class="form-control" type="text" name="telefono" maxlength="40"></div>
+			  </div>
+			</div>
+			<div class="row">
+			  <div class="col-lg-4 col-sm-6 text-left">
+				<p><b>Persona de contacto</b></p>
+				  <p><b>Cargo</b></p>
+			  </div>
+			  <div class="col-lg-6 col-sm-6 text-center">
+				  <div class="input-group">
+				  <div class="input-group-addon">
+						 <i class="fa fa-user"></i>
+					 </div>
+				<input class="form-control" type="text" name="persona_contacto" ></div>
+				  <div class="input-group">
+				  <div class="input-group-addon">
+						 <i class="fa fa-briefcase"></i>
+					 </div>
+					  <input class="form-control" type="text" name="cargo"></div>
+			  </div>
+			</div>  
+			<div class="row">
+			  <div class="col-lg-4 col-sm-6 text-left">
+				<p><b>Tipo de actividad</b></p>
+			  </div>
+			  <div class="col-lg-6 col-sm-6 text-center">
+				  <div class="input-group">
+				  <div class="input-group-addon">
+						 <i class="fa fa-edit"></i>
+					 </div>
+					  <input class="form-control" type="text" name="tipo_actividad" maxlength="50"></div>
+			  </div>
+			</div>
+			<div class="row">
+			  <div class="col-lg-4 col-sm-6 text-left">
+				<p><b>Descripcción</b></p>
+			  </div>
+			  <div class="col-lg-6 col-sm-6 text-center">
+				  <div class="input-group">
+					 <div class="input-group-addon">
+						 <i class="fa fa-comment"></i>
+					 </div> <textarea class="form-control" form="general_form" name="descripccion" maxlength="300"></textarea>
+				  </div>
+			  </div>
+			</div>
+		  </div>
+
+
+		 <div class="row">
+			<div class="col-lg-12 page-header text-center">
+				<h2>2. Descripcción de las instalaciones</h2>
+			</div>
+		  </div>
+		  <div class="container">
+			<div class="row">
+			  <div class="col-lg-4 col-sm-6 text-left">
+				<p><b>Número de bloques</b></p>
+			  </div>
+			  <div class="col-lg-6 col-sm-6 text-center">
+				 <div class="input-group">
+					 <div class="input-group-addon">
+						 <i class="fa fa-hashtag"></i>
+					 </div> <input class="form-control" type="number" name="numero_bloques" min="1" max="99">
+				  </div>
+			  </div>
+			</div>
+			<div class="row">
+			  <div class="col-lg-4 col-sm-6 text-left">
+				<p><b>Número de pisos por bloque</b></p>
+			  </div>
+			  <div class="col-lg-6 col-sm-6 text-center">
+				 <div class="input-group">
+					 <div class="input-group-addon">
+						 <i class="fa fa-hashtag"></i>
+					 </div> <input class="form-control" type="number" name="numero_pisos_bloque" min="1" max="99">
+				  </div>
+			  </div>
+			</div>
+			<div class="row">
+			  <div class="col-lg-4 col-sm-6 text-left">
+				<p><b>Número de apartamentos</b></p>
+			  </div>
+			  <div class="col-lg-6 col-sm-6 text-center">
+				 <div class="input-group">
+					 <div class="input-group-addon">
+						 <i class="fa fa-hashtag"></i>
+					 </div> <input class="form-control" type="number" name="numero_apartamentos" min="1" max="999">
+				  </div>
+			  </div>
+			</div>
+			<div class="row">
+			  <div class="col-lg-4 col-sm-6 text-left">
+				<p><b>Número de parqueaderos</b></p>
+			  </div>
+			  <div class="col-lg-6 col-sm-6 text-center">
+				 <div class="input-group">
+					 <div class="input-group-addon">
+						 <i class="fa fa-hashtag"></i>
+					 </div> <input class="form-control" type="number" name="numero_parqueaderos" min="1" max="999">
+				  </div>
+			  </div>
+			</div>
+			<div class="row">
+			  <div class="col-lg-4 col-sm-6 text-left">
+				<p><b>Número de sotanos</b></p>
+			  </div>
+			  <div class="col-lg-6 col-sm-6 text-center">
+				 <div class="input-group">
+					 <div class="input-group-addon">
+						 <i class="fa fa-hashtag"></i>
+					 </div> <input class="form-control" type="number" name="numero_sotanos" min="1" max="9">
+				  </div>
+			  </div>
+			</div>
+			<div class="row">
+			  <div class="col-lg-4 col-sm-6 text-left">
+				<p><b>Descripción de parqueaderos</b></p>
+			  </div>
+			  <div class="col-lg-6 col-sm-6 text-center">
+				 <div class="input-group">
+					 <div class="input-group-addon">
+						 <i class="fa fa-pencil-square-o"></i>
+					 </div><textarea class="form-control" form="general_form" name="descripccion_paruqeaderos" maxlength="100"></textarea>
+
+				  </div>
+			  </div>
+		  </div>	  
+		  </div>
+
+
+
+		 <div class="row">
+			<div class="col-lg-12 page-header text-center">
+				<h2>3. Ubicación</h2>
+			</div>
+		  </div>
+		  <div class="container">
+			<div class="row">
+			  <div class="col-lg-4 col-sm-6 text-left">
+				<p><b>Latitud</b></p>
+			  </div>
+			  <div class="col-lg-6 col-sm-6 text-center">
+				 <div class="input-group">
+					 <div class="input-group-addon">
+						 <i class="fa fa-globe"></i>
+					 </div> <input class="form-control" type="text" name="latitud" maxlength="30">
+				  </div>
+			  </div>
+			</div>
+			<div class="row">
+			  <div class="col-lg-4 col-sm-6 text-left">
+				<p><b>Longitud</b></p>
+			  </div>
+			  <div class="col-lg-6 col-sm-6 text-center">
+				 <div class="input-group">
+					 <div class="input-group-addon">
+						 <i class="fa fa-globe"></i>
+					 </div> <input class="form-control" type="text" name="longitud" maxlength="30">
+				  </div>
+			  </div>
+			</div>
+			<div class="row">
+			  <div class="col-lg-4 col-sm-6 text-left">
+				<p><b>Altitud</b></p>
+			  </div>
+			  <div class="col-lg-6 col-sm-6 text-center">
+				 <div class="input-group">
+					 <div class="input-group-addon">
+						 <i class="fa fa-globe"></i>
+					 </div> <input class="form-control" type="text" name="altitud" maxlength="30">
+				  </div>
+			  </div>
+			</div>
+			<div class="row">
+			  <div class="col-lg-4 col-sm-6 text-left">
+				<p><b>Descripcción</b></p>
+			  </div>
+			  <div class="col-lg-6 col-sm-6 text-center">
+				  <div class="input-group">
+					 <div class="input-group-addon">
+						 <i class="fa fa-comment"></i>
+					 </div> <textarea class="form-control" form="general_form" name="descripccion_ubicacion" maxlength="300"></textarea>
+				  </div>
+			  </div>
+			</div>
+		  </div>
+
+
+		  <div class="row">
+			<div class="col-lg-12 page-header text-center">
+				<h2>4. Linderos</h2>
+			</div>
+		  </div>
+		  <div class="container">
+			<div class="row">
+			  <div class="col-lg-4 col-sm-6 text-left">
+				<p><b>Norte</b></p>
+			  </div>
+			  <div class="col-lg-6 col-sm-6 text-center">
+				 <div class="input-group">
+					 <div class="input-group-addon">
+						 <i class="fa fa-compass"></i>
+					 </div> <input class="form-control" type="text" name="lindero_norte" maxlength="150">
+				  </div>
+			  </div>
+			</div>
+			<div class="row">
+			  <div class="col-lg-4 col-sm-6 text-left">
+				<p><b>Sur</b></p>
+			  </div>
+			  <div class="col-lg-6 col-sm-6 text-center">
+				 <div class="input-group">
+					 <div class="input-group-addon">
+						 <i class="fa fa-compass"></i>
+					 </div> <input class="form-control" type="text" name="lindero_sur" maxlength="30">
+				  </div>
+			  </div>
+			</div>
+			<div class="row">
+			  <div class="col-lg-4 col-sm-6 text-left">
+				<p><b>Oriente</b></p>
+			  </div>
+			  <div class="col-lg-6 col-sm-6 text-center">
+				 <div class="input-group">
+					 <div class="input-group-addon">
+						 <i class="fa fa-compass"></i>
+					 </div> <input class="form-control" type="text" name="lindero_oriente" maxlength="150">
+				  </div>
+			  </div>
+			</div>
+			<div class="row">
+			  <div class="col-lg-4 col-sm-6 text-left">
+				<p><b>Occidente</b></p>
+			  </div>
+			  <div class="col-lg-6 col-sm-6 text-center">
+				 <div class="input-group">
+					 <div class="input-group-addon">
+						 <i class="fa fa-compass"></i>
+					 </div> <input class="form-control" type="text" name="lindero_occidente" maxlength="150">
+				  </div>
+			  </div>
+			</div>
+		 </div>
+
+		  <div class="row">
+			<div class="col-lg-12 page-header text-center">
+				<h2>5. Tipo de construcción</h2>
+			</div>
+		  </div>
+		  <div class="container">
+			<div class="row">
+			  <div class="col-lg-4 col-sm-4 text-left">
+				<p><b>Grupo de contrucción</b></p>
+			  </div>
+			  <div class="col-lg-4 col-sm-4 text-center">
+				 <div class="input-group">
+					 <div class="input-group-addon">
+						 <i class="fa fa-object-group"></i>
+					 </div> <select name="grupo_construccion" id="grupo_construccion" class="form-control"><option value="0">Seleccione un grupo </option><option value="1">GRUPO I</option><option value="2">GRUPO II</option><option value="3">GRUPO III</option><option value="4">GRUPO IV</option><option value="5">GRUPO V </option><option value="6">GRUPO VI</option></select>
+				  </div>
+			  </div>
+				<div class="col-lg-4 col-sm-4 text-center">
+				<label id="descripccion_grupo" class="pequeno">Descripción de los grupos</label>
+			  </div>
+			</div>
+			<div class="row">
+			  <div class="col-lg-4 col-sm-6 text-left">
+				<p><b>Edad constructiva</b></p>
+			  </div>
+			  <div class="col-lg-6 col-sm-6 text-center">
+				 <div class="input-group">
+					 <div class="input-group-addon">
+						 <i class="fa fa-clock-o"></i>
+					 </div> <input class="form-control" type="number" name="edad_constructiva" min="0" max="99">
+				  </div>
+			  </div>
+			</div>
+			<div class="row">
+			  <div class="col-lg-4 col-sm-6 text-left">
+				<p><b>Norma de sismo resistencia</b></p>
+			  </div>
+			  <div class="col-lg-6 col-sm-6 text-center">
+				 <div class="input-group">
+					 <div class="input-group-addon">
+						 <i class="fa fa-book"></i>
+					 </div> <input class="form-control" type="text" name="norma_sismoresistencia" maxlength="150">
+				  </div>
+			  </div>
+			</div>
+			<div class="row">
+			  <div class="col-lg-4 col-sm-6 text-left">
+				<p><b>Material de cubierta / estructura</b></p>
+			  </div>
+			  <div class="col-lg-6 col-sm-6 text-center">
+				 <div class="input-group">
+					 <div class="input-group-addon">
+						 <i class="fa fa-cogs"></i>
+					 </div> <input class="form-control" type="text" name="material_cubierta_estuctura" maxlength="150">
+				  </div>
+			  </div>
+			</div>
+
+			<div class="row">
+			  <div class="col-lg-4 col-sm-6 text-left">
+				<p><b>Materiales fachada</b></p>
+			  </div>
+			  <div class="col-lg-6 col-sm-6 text-center">
+				 <div class="input-group">
+					 <div class="input-group-addon">
+						 <i class="fa fa-cogs"></i>
+					 </div> <input class="form-control" type="text" name="materiales_fachada" maxlength="150">
+				  </div>
+			  </div>
+			</div>
+			<div class="row">
+			  <div class="col-lg-4 col-sm-6 text-left">
+				<p><b>Materiales escalera</b></p>
+			  </div>
+			  <div class="col-lg-6 col-sm-6 text-center">
+				 <div class="input-group">
+					 <div class="input-group-addon">
+						 <i class="fa fa-cogs"></i>
+					 </div> <input class="form-control" type="text" name="materiales_escalera" maxlength="150">
+				  </div>
+			  </div>
+			</div>
+			<div class="row">
+			  <div class="col-lg-4 col-sm-6 text-left">
+				<p><b>Materiales de entrepisos</b></p>
+			  </div>
+			  <div class="col-lg-6 col-sm-6 text-center">
+				 <div class="input-group">
+					 <div class="input-group-addon">
+						 <i class="fa fa-cogs"></i>
+					 </div> <input class="form-control" type="text" name="materiales_entrepisos" maxlength="150">
+				  </div>
+			  </div>
+			</div>
+			<div class="row">
+			  <div class="col-lg-4 col-sm-6 text-left">
+				<p><b>Materiales de pisos</b></p>
+			  </div>
+			  <div class="col-lg-6 col-sm-6 text-center">
+				 <div class="input-group">
+					 <div class="input-group-addon">
+						 <i class="fa fa-cogs"></i>
+					 </div> <input class="form-control" type="text" name="materiales_pisos" maxlength="150">
+				  </div>
+			  </div>
+			</div>
+			<div class="row">
+			  <div class="col-lg-4 col-sm-6 text-left">
+				<p><b>Irregularidad de altura</b></p>
+			  </div>
+			  <div class="col-lg-6 col-sm-6 text-center">
+				 <div class="input-group">
+					 <div class="input-group-addon">
+						 <i class="fa fa-sort-amount-asc"></i>
+					 </div> <input class="form-control" type="text" name="irregularidad_altura" maxlength="150">
+				  </div>
+			  </div>
+			</div>  
+			<div class="row">
+			  <div class="col-lg-4 col-sm-6 text-left">
+				<p><b>Irregularidad de planta</b></p>
+			  </div>
+			  <div class="col-lg-6 col-sm-6 text-center">
+				 <div class="input-group">
+					 <div class="input-group-addon">
+						 <i class="fa fa-align-justify"></i>
+					 </div> <input class="form-control" type="text" name="irregularidad_planta" maxlength="150">
+				  </div>
+			  </div>
+			</div>  
+			<div class="row">
+			  <div class="col-lg-4 col-sm-6 text-left">
+				<p><b>Cerramiento</b></p>
+			  </div>
+			  <div class="col-lg-6 col-sm-6 text-center">
+				 <div class="input-group">
+					 <div class="input-group-addon">
+						 <i class="fa fa-ban"></i>
+					 </div> <input class="form-control" type="text" name="cerramiento" maxlength="150">
+				  </div>
+			  </div>
+			</div>  
+			<div class="row">
+			  <div class="col-lg-4 col-sm-6 text-left">
+				<p><b>Observaciones</b></p>
+			  </div>
+			  <div class="col-lg-6 col-sm-6 text-center">
+				 <div class="input-group">
+					 <div class="input-group-addon">
+						 <i class="fa fa-comment"></i>
+					 </div> <input class="form-control" type="text" name="observaciones_tipo_construccion" maxlength="150">
+				  </div>
+			  </div>
+			</div>   
+		  </div>
+
+
+		  <div class="row">
+			<div class="col-lg-12 page-header text-center">
+				<h2>6. Bienes en areas comunes</h2>
+			</div>
+		  </div>
+		 <div class="container">
+		<div class="col-lg-6 col-sm-6 text-left">	
+			<div class="row fa-border" >
+			  <div class="col-lg-6 col-sm-6 text-left">
+				  <p><b>Senderos peatonales</b></p>
+			  </div>
+			  <div class="col-lg-6 col-sm-6 text-center">
+				  <input name="senderos_peatonales" id="senderos_peatonales_e"  type="checkbox" >
+			  </div>
+			</div> 
+			<div class="row fa-border">
+			  <div class="col-lg-6 col-sm-6 text-left">
+				  <p><b>Vias vehiculares</b></p>
+			  </div>
+			  <div class="col-lg-6 col-sm-6 text-center">
+				  <input name="vias_vehiculares" id="vias_vehiculares_e" type="checkbox">
+			  </div>
+			</div>
+			<div class="row fa-border">
+			  <div class="col-lg-6 col-sm-6 text-left">
+				  <p><b>Porteria</b></p>
+			  </div>
+			  <div class="col-lg-6 col-sm-6 text-center">
+				  <input name="porteria" id="porteria_e" type="checkbox">
+			  </div>
+			</div>
+			<div class="row fa-border">
+			  <div class="col-lg-6 col-sm-6 text-left">
+				  <p><b>Lobby</b></p>
+			  </div>
+			  <div class="col-lg-6 col-sm-6 text-center">
+				  <input name="lobby" id="lobby_e" type="checkbox">
+			  </div>
+			</div>
+			<div class="row fa-border">
+			  <div class="col-lg-6 col-sm-6 text-left">
+				  <p><b>Baños porteria</b></p>
+			  </div>
+			  <div class="col-lg-6 col-sm-6 text-center">
+				  <input name="banos_porteria"  id="banos_porteria_e" type="checkbox">
+			  </div>
+			</div>
+			<div class="row fa-border">
+			  <div class="col-lg-6 col-sm-6 text-left">
+				  <p><b>Cuarto de disposición de basuras</b></p>
+			  </div>
+			  <div class="col-lg-6 col-sm-6 text-center">
+				  <input name="cuarto_basuras" id="cuartos_basuras_e"  type="checkbox">
+			  </div>
+			</div>
+			<div class="row fa-border">
+			  <div class="col-lg-6 col-sm-6 text-left">
+				  <p><b>Oficina administracion</b></p>
+			  </div>
+			  <div class="col-lg-6 col-sm-6 text-center">
+				  <input name="oficina_admin" id="oficina_admin_e" type="checkbox">
+			  </div>
+			</div>
+			<div class="row fa-border">
+			  <div class="col-lg-6 col-sm-6 text-left">
+				  <p><b>Canchas deportivas</b></p>
+			  </div>
+			  <div class="col-lg-6 col-sm-6 text-center">
+				  <input name="canchas_deprotivas" id="canchas_deportivas_e" type="checkbox">
+			  </div>
+			</div>
+			<div class="row fa-border">
+			  <div class="col-lg-6 col-sm-6 text-left">
+				  <p><b>Salón comunal</b></p>
+			  </div>
+			  <div class="col-lg-6 col-sm-6 text-center">
+				  <input name="salon_comunal" id="salon_comunal_e" type="checkbox">
+			  </div>
+			</div>
+			<div class="row fa-border">
+			  <div class="col-lg-6 col-sm-6 text-left">
+				  <p><b>Zona humeda</b></p>
+			  </div>
+			  <div class="col-lg-6 col-sm-6 text-center">
+				  <input name="zona_humeda" id="zona_humeda_e" type="checkbox">
+			  </div>
+			</div>
+			</div>
+		<div class="col-lg-6 col-sm-6 text-left">	
+			<div class="row fa-border">
+			  <div class="col-lg-6 col-sm-6 text-left">
+				  <p><b>Juegos Infantiles</b></p>
+			  </div>
+			  <div class="col-lg-6 col-sm-6 text-center">
+				  <input name="juegos_infantiles" id="juegos_infantiles_e" type="checkbox">
+			  </div>
+			</div>
+			<div class="row fa-border">
+			  <div class="col-lg-6 col-sm-6 text-left">
+				  <p><b>Tanques de agua subterraneos</b></p>
+			  </div>
+			  <div class="col-lg-6 col-sm-6 text-center">
+				  <input name="tanques_agua_sub" id="tanques_agua_sub_e"  type="checkbox">
+			  </div>
+			</div>
+			<div class="row fa-border">
+			  <div class="col-lg-6 col-sm-6 text-left">
+				  <p><b>Tanques de agua aereos</b></p>
+			  </div>
+			  <div class="col-lg-6 col-sm-6 text-center">
+				  <input name="tanques_agua_aereos" id="tanques_agua_aereos_e" type="checkbox">
+			  </div>
+			</div>
+			<div class="row fa-border">
+			  <div class="col-lg-6 col-sm-6 text-left">
+				  <p><b>Tansformador electrico ( propiedad del asegurado ) </b></p>
+			  </div>
+			  <div class="col-lg-6 col-sm-6 text-center">
+				  <input name="transformador_electrico" id="transformador_electico_e" type="checkbox">
+			  </div>
+			</div>
+			<div class="row fa-border">
+			  <div class="col-lg-6 col-sm-6 text-left">
+				  <p><b>Planta electrica</b></p>
+			  </div>
+			  <div class="col-lg-6 col-sm-6 text-center">
+				  <input name="planta_electrica" id="planta_electrica_e" type="checkbox">
+			  </div>
+			</div>
+			<div class="row fa-border">
+			  <div class="col-lg-6 col-sm-6 text-left">
+				  <p><b>Ascensores</b></p>
+			  </div>
+			  <div class="col-lg-6 col-sm-6 text-center">
+				  <input name="ascensores" id="ascensores_e" type="checkbox">
+			  </div>
+			</div>
+			<div class="row fa-border">
+			  <div class="col-lg-6 col-sm-6 text-left">
+				<p><strong>Cuartos de maquina de equipo de bombeo</strong></p>
+			  </div>
+			  <div class="col-lg-6 col-sm-6 text-center">
+				  <input name="cuartos_maquina_bombeo" id="cuartos_maquina_bombeo_e" type="checkbox">
+			  </div>
+			</div>
+			<div class="row fa-border">
+			  <div class="col-lg-6 col-sm-6 text-left">
+				  <p><b>Equipos de bombeo</b></p>
+			  </div>
+			  <div class="col-lg-6 col-sm-6 text-center">
+				  <input name="equipos_bombeo" id="equipos_bombeo_e"  type="checkbox">
+			  </div>
+			</div>
+			<div class="row fa-border">
+			  <div class="col-lg-6 col-sm-6 text-left">
+				  <p><b>Gimnasio</b></p>
+			  </div>
+			  <div class="col-lg-6 col-sm-6 text-center">
+				  <input name="gimnasio" id="gimnasio_e" type="checkbox">
+			  </div>
+			</div>
+			<div class="row fa-border">
+			  <div class="col-lg-6 col-sm-6 text-left">
+				  <p><b>Zona BBQ</b></p>
+			  </div>
+			  <div class="col-lg-6 col-sm-6 text-center">
+				  <input name="bbq" id="bbq_e" type="checkbox">
+			  </div>
+			</div>
+			  </div>
+		  </div>
+
+
+		  <div class="row">
+			<div class="col-lg-12 page-header text-center">
+				<h2>7. Información almacenamiento</h2>
+			</div>
+		  </div>
+		  <div class="container">
+			<div class="row">
+			  <div class="col-lg-4 col-sm-6 text-left">
+				<p><b>El tipo de mercancia implica un riesgo azaroso?</b></p>
+			  </div>
+			  <div class="col-lg-6 col-sm-6 text-center">
+				 <div class="input-group">
+					 <div class="input-group-addon">
+						 <i class="fa fa-times"></i>
+					 </div> <select name="riesgo_azaroso" id="riesgo_azaroso" class="form-control"><option value="0">Seleccione una opción </option><option value="1"> SI</option><option value="2">NO</option></select>
+				  </div>
+			  </div>
+			</div>
+			<div class="row">
+			  <div class="col-lg-4 col-sm-6 text-left">
+				<p><b>Ventilación Adecuada?</b></p>
+			  </div>
+			  <div class="col-lg-6 col-sm-6 text-center">
+				 <div class="input-group">
+					 <div class="input-group-addon">
+						 <i class="fa fa-times"></i>
+					 </div> <select name="ventilacion_adecuada" id="ventilacion_adecuada" class="form-control"><option value="0">Seleccione una opción </option><option value="1"> SI</option><option value="2">NO</option></select> 
+				  </div>
+			  </div>
+			</div>
+			<div class="row">
+			  <div class="col-lg-4 col-sm-6 text-left">
+				<p><b>Tipo de iluminación</b></p>
+			  </div>
+			  <div class="col-lg-6 col-sm-6 text-center">
+				 <div class="input-group">
+					 <div class="input-group-addon">
+						 <i class="fa fa-lightbulb-o"></i>
+					 </div><select name="tipo_iluminacion" id="tipo_iluminacion" class="form-control"><option value="0">Seleccione una opción </option><option value="1">No Aplica</option><option value="2">Claraboyas</option><option value="3">Bombillo incandescente</option><option value="4">Bombillo halogeno</option><option value="5">Bombillo fluorecente</option><option value="6">Reflectores</option></select>
+				  </div>
+			  </div>
+			</div>
+			<div class="row">
+			  <div class="col-lg-4 col-sm-6 text-left">
+				<p><b>Mercancias separadas de lamparas y techos?</b></p>
+			  </div>
+			  <div class="col-lg-6 col-sm-6 text-center">
+				 <div class="input-group">
+					 <div class="input-group-addon">
+						 <i class="fa fa-arrow-up"></i>
+					 </div> <select name="merc_separada_lamp_techos" id="merc_separada_lamp_techos" class="form-control"><option value="0">Seleccione una opción </option><option value="1"> SI</option><option value="2">NO</option></select>
+				  </div>
+			  </div>
+			</div>
+			<div class="row">
+			  <div class="col-lg-4 col-sm-6 text-left">
+				<p><b>La iluminación esta ubicada en los corredores?</b></p>
+			  </div>
+			  <div class="col-lg-6 col-sm-6 text-center">
+				 <div class="input-group">
+					 <div class="input-group-addon">
+						 <i class="fa fa-lightbulb-o"></i>
+					 </div> <select name="iluminacion_corredores" id="iluminacion_corredores" class="form-control"><option value="0">Seleccione una opción </option><option value="1"> SI</option><option value="2">NO</option></select>
+				  </div>
+			  </div>
+			</div>
+			<div class="row">
+			  <div class="col-lg-4 col-sm-6 text-left">
+				<p><b>Forma Almacenamiento</b></p>
+			  </div>
+			  <div class="col-lg-6 col-sm-6 text-center">
+				 <div class="input-group">
+					 <div class="input-group-addon">
+						 <i class="fa fa-archive"></i>
+					 </div> <select name="forma_almacenamiento" id="forma_almacenamiento" class="form-control"><option value="0">Seleccione una opción </option><option value="1">No aplica</option><option value="2">Estiba</option><option value="3">Estantes</option><option value="4">Sobre el piso</option></select>
+				  </div>
+			  </div>
+			</div>
+			<div class="row">
+			  <div class="col-lg-4 col-sm-6 text-left">
+				<p><b>Altura Apilamiento (m)</b></p>
+			  </div>
+			  <div class="col-lg-6 col-sm-6 text-center">
+				 <div class="input-group">
+					 <div class="input-group-addon">
+						 <i class="fa fa-arrow-up"></i>
+					 </div> <input class="form-control" type="number" name="altura_apilamineto" min="1" max="99">
+				  </div>
+			  </div>
+			</div>
+			<div class="row">
+			  <div class="col-lg-4 col-sm-6 text-left">
+				<p><b>Tipo Embalaje</b></p>
+			  </div>
+			  <div class="col-lg-6 col-sm-6 text-center">
+				 <div class="input-group">
+					 <div class="input-group-addon">
+						 <i class="fa fa-archive"></i>
+					 </div> <select name="tipo_embalaje" id="tipo_embalaje" class="form-control"><option value="0">Seleccione una opción </option><option value="1">No aplica</option><option value="2">Bolsas</option><option value="3">Cajas</option><option value="4">Contenedor metalico</option><option value="5">Contenedor plastico</option><option value="6">Envoltura plastica</option></select>
+				  </div>
+			  </div>
+			</div>  
+			<div class="row">
+			  <div class="col-lg-4 col-sm-6 text-left">
+				<p><b>Ancho Corredor</b></p>
+			  </div>
+			  <div class="col-lg-6 col-sm-6 text-center">
+				 <div class="input-group">
+					 <div class="input-group-addon">
+						<i class="fa fa-arrows-h"></i>
+					 </div> <select name="ancho_corredor" id="ancho_corredor" class="form-control"><option value="0">Seleccione una opción </option><option value="1">Adecuado</option><option value="2">No adecuado</option></select>
+				  </div>
+			  </div>
+			</div>  
+			<div class="row">
+			  <div class="col-lg-4 col-sm-4 text-left">
+				<p><b>Descripción</b></p>
+			  </div>
+			  <div class="col-lg-8 col-sm-8 text-center">
+				 <div class="input-group">
+					 <div class="input-group-addon">
+						 <i class="fa fa-comment"></i>
+					 </div><textarea class="form-control" form="general_form" name="observaciones_info_almacenamiento" maxlength="400" placeholder="Describa:
+	- Materias Primas almacenadas. (Cantidad, tipo, Riesgo)
+	- Producto Terminado almacenado. (Cantidad, tipo, Riesgo)
+	- Condiciones Generales de almacenamiento.
+	- Orden y Limpieza.
+	" title="Describa:
+	- Materias Primas almacenadas. (Cantidad, tipo, Riesgo)
+	- Producto Terminado almacenado. (Cantidad, tipo, Riesgo)
+	- Condiciones Generales de almacenamiento.
+	- Orden y Limpieza.
+	"></textarea>
+				  </div>
+			  </div>
+			</div>   
+		  </div>
+
+		  <div class="row">
+			<div class="col-lg-12 page-header text-center">
+				<h2>8. Servicios públicos</h2>
+			</div>
+		  </div>
+		  <div class="container">
+			<div class="row fa-border">
+			  <div class="col-lg-3 col-sm-3 text-left">
+				<p><b>Energía electrica</b></p>
+			  </div>
+			  <div class="col-lg-3 col-sm-3 text-center">
+				 <div class="input-group">
+					 <div class="input-group-addon">
+						 <i class="fa fa-times"></i>
+					 </div> <select name="energia" id="energia" class="form-control"><option value="0">Seleccione una opción </option><option value="1"> SI</option><option value="2">NO</option></select>
+				  </div>
+			  </div>
+			  <div class="col-lg-3 col-sm-3 text-left">
+				<p><b>Quien lo suministra</b></p>
+			  </div>
+			  <div class="col-lg-3 col-sm-3 text-left">
+				<input class="form-control" type="text" name="quien_energia" maxlength="30">
+			  </div>
+
+
+			</div>
+			<div class="row fa-border">
+			  <div class="col-lg-3 col-sm-3 text-left">
+				<p><b>Agua, acueducto</b></p>
+			  </div>
+			  <div class="col-lg-3 col-sm-3 text-center">
+				 <div class="input-group">
+					 <div class="input-group-addon">
+						 <i class="fa fa-times"></i>
+					 </div>  <select name="agua" id="agua" class="form-control"><option value="0">Seleccione una opción </option><option value="1"> SI</option><option value="2">NO</option></select>
+				  </div>
+			  </div>
+			<div class="col-lg-3 col-sm-3 text-left">
+				<p><b>Quien lo suministra</b></p>
+			  </div>
+			  <div class="col-lg-3 col-sm-3 text-left">
+				<input class="form-control" type="text" name="quien_agua" maxlength="30">
+			  </div>
+			</div>
+			<div class="row fa-border">
+			  <div class="col-lg-3 col-sm-3 text-left">
+				<p><b>Aire acondicionado</b></p>
+			  </div>
+			  <div class="col-lg-3 col-sm-3 text-center">
+				 <div class="input-group">
+					 <div class="input-group-addon">
+						 <i class="fa fa-"></i>
+					 </div><select name="aire_acondicionado" id="aire_acondicionado" class="form-control"><option value="0">Seleccione una opción </option><option value="1"> SI</option><option value="2">NO</option></select> 
+				  </div>
+			  </div>
+			<div class="col-lg-3 col-sm-3 text-left">
+				<p><b>Quien lo suministra</b></p>
+			  </div>
+			  <div class="col-lg-3 col-sm-3 text-left">
+				<input class="form-control" type="text" name="quien_aire" maxlength="30">
+			  </div>
+			</div>
+			<div class="row fa-border">
+			  <div class="col-lg-3 col-sm-3 text-left">
+				<p><b>Gas</b></p>
+			  </div>
+			  <div class="col-lg-3 col-sm-3 text-center">
+				 <div class="input-group">
+					 <div class="input-group-addon">
+						 <i class="fa fa-fire"></i>
+					 </div><select name="gas" id="gas" class="form-control"><option value="0">Seleccione una opción </option><option value="1"> SI</option><option value="2">NO</option></select> 
+				  </div>
+			  </div>
+			  <div class="col-lg-3 col-sm-3 text-left">
+				<p><b>Quien lo suministra</b></p>
+			  </div>
+			  <div class="col-lg-3 col-sm-3 text-left">
+				<input class="form-control" type="text" name="quien_gas" maxlength="30">
+			  </div>
+			</div>
+			<div class="row fa-border">
+			  <div class="col-lg-3 col-sm-3 text-left">
+				<p><b>Combustible</b></p>
+			  </div>
+			  <div class="col-lg-3 col-sm-3 text-center">
+				 <div class="input-group">
+					 <div class="input-group-addon">
+						 <i class="fa fa-fire"></i>
+					 </div><select name="combustible" id="combustible" class="form-control"><option value="0">Seleccione una opción </option><option value="1"> SI</option><option value="2">NO</option></select> 
+				  </div>
+			  </div>
+			  <div class="col-lg-3 col-sm-3 text-left">
+				<p><b>Quien suministra los elementos</b></p>
+				<p><b>Mencione cuales</b></p>
+			  </div>
+			  <div class="col-lg-3 col-sm-3 text-left">
+				 <input class="form-control" type="text" name="quien_combustible" maxlength="30">
+				 <input class="form-control" type="text" name="cuales_combustible" maxlength="150">
+			  </div>
+			</div>
+			<div class="row fa-border">
+			  <div class="col-lg-3 col-sm-3 text-left">
+				<p><b>Telecomunicaciones</b></p>
+			  </div>
+			  <div class="col-lg-3 col-sm-3 text-center">
+				 <div class="input-group">
+					 <div class="input-group-addon">
+						 <i class="fa fa-archive"></i>
+					 </div> <select name="telecomunicaciones" id="telecomunicaciones" class="form-control"><option value="0">Seleccione una opción </option><option value="1"> SI</option><option value="2">NO</option></select>
+				  </div>
+			  </div>
+			  <div class="col-lg-3 col-sm-3 text-left">
+				<p><b>Quien suministra los elementos</b></p>
+				<p><b>Mencione cuales</b></p>
+			  </div>
+			  <div class="col-lg-3 col-sm-3 text-left">
+				 <input class="form-control" type="text" name="quien_telecom" maxlength="30">
+				 <input class="form-control" type="text" name="cuales_telecom" maxlength="150">
+			  </div>
+			</div>
+		  </div>
+
+		   <div class="row">
+			<div class="col-lg-12 page-header text-center">
+				<h2>9. Orden y aseo</h2>
+			</div>
+		  </div>
+		  <div class="container">
+			<div class="row ">
+			  <div class="col-lg-4 col-sm-4 text-left">
+				<p><b>Orden del lugar</b></p>
+			  </div>
+			  <div class="col-lg-6 col-sm-6 text-center">
+				 <div class="input-group">
+					 <div class="input-group-addon">
+						 <i class="fa fa-times"></i>
+					 </div> <input class="form-control" type="text" name="orden_lugar" maxlength="30">
+				  </div>
+			  </div>	
+			</div>
+			<div class="row">
+			  <div class="col-lg-4 col-sm-4 text-left">
+				<p><b>Limpieza</b></p>
+			  </div>
+			  <div class="col-lg-6 col-sm-6 text-center">
+				 <div class="input-group">
+					 <div class="input-group-addon">
+						 <i class="fa fa-times"></i>
+					 </div> <input class="form-control" type="text" name="limpieza" maxlength="30">
+				  </div>
+			  </div>	
+			</div>
+			<div class="row">
+			  <div class="col-lg-4 col-sm-4 text-left">
+				<p><b>Vias de circulación</b></p>
+			  </div>
+			  <div class="col-lg-6 col-sm-6 text-center">
+				 <div class="input-group">
+					 <div class="input-group-addon">
+						 <i class="fa fa-times"></i>
+					 </div> <input class="form-control" type="text" name="vias_circulacion" maxlength="30">
+				  </div>
+			  </div>	
+			</div>
+			<div class="row">
+			  <div class="col-lg-4 col-sm-4 text-left">
+				<p><b>Vias de evacuación</b></p>
+			  </div>
+			  <div class="col-lg-6 col-sm-6 text-center">
+				 <div class="input-group">
+					 <div class="input-group-addon">
+						 <i class="fa fa-times"></i>
+					 </div> <input class="form-control" type="text" name="vias_evacuacion" maxlength="30">
+				  </div>
+			  </div>	
+			</div>
+			<div class="row">
+			  <div class="col-lg-4 col-sm-4 text-left">
+				<p><b>Periodicidad de aseo</b></p>
+			  </div>
+			  <div class="col-lg-6 col-sm-6 text-center">
+				 <div class="input-group">
+					 <div class="input-group-addon">
+						 <i class="fa fa-fire"></i>
+					 </div><select name="periodicidad_aseo" id="periodicidad_aseo" class="form-control"><option value="0">Seleccione una opción </option><option value="1">Diaria</option><option value="2">Menor a tres dias</option><option value="3">Semanal</option></select> 
+				  </div>
+			  </div>
+			</div>
+		  </div>
+
+		  <div class="row">
+			<div class="col-lg-12 page-header text-center">
+				<h2>10. Permisos de trabajo</h2>
+			</div>
+		  </div>
+		  <div class="container">
+			<div class="row ">
+			  <div class="col-lg-3 col-sm-3 text-left">
+				<p><b>Tiene Permisos de trabajo implementados?</b></p>
+			  </div>
+			  <div class="col-lg-3 col-sm-3 text-center">
+				 <div class="input-group">
+					 <div class="input-group-addon">
+						 <i class="fa fa-times"></i>
+					 </div> <select name="tiene_permisos" id="tiene_permisos" class="form-control"><option value="0">Seleccione una opción </option><option value="1">SI</option><option value="2">NO</option><option value="3">N/A</option></select> 
+				  </div>
+			  </div>
+			  <div class="col-lg-3 col-sm-3 text-left">
+				<p><b>Describa cuales se trabajan</b></p>
+			  </div>
+			  <div class="col-lg-3 col-sm-3 text-center">
+
+				 <textarea class="form-control" form="general_form" name="cuales_permisos_se_trabjan" maxlength="150"></textarea>
+
+			  </div>
+			</div>
+			<div class="row">
+			  <div class="col-lg-4 col-sm-4 text-left">
+				<p><b>Los permisos de trabajo son auditados?</b></p>
+			  </div>
+			  <div class="col-lg-6 col-sm-6 text-center">
+				 <div class="input-group">
+					 <div class="input-group-addon">
+						 <i class="fa fa-times"></i>
+					 </div> <select name="permisos_auditados" id="permisos_auditados" class="form-control"><option value="0">Seleccione una opción </option><option value="1">SI</option><option value="2">NO</option></select> 
+				  </div>
+			  </div>	
+			</div>
+			<div class="row">
+			  <div class="col-lg-4 col-sm-4 text-left">
+				<p><b>Cual es la frecuencia de la auditoria ?</b></p>
+			  </div>
+			  <div class="col-lg-6 col-sm-6 text-center">
+				 <div class="input-group">
+					 <div class="input-group-addon">
+						 <i class="fa fa-times"></i>
+					 </div> <select name="frecuencia_auditoria" id="frecuencia_auditoria" class="form-control"><option value="0">Seleccione una opción </option><option value="1">Diaria</option><option value="2">Semanal</option><option value="3">Mensual</option><option value="4">Anual</option><option value="5">N/A</option></select> 
+				  </div>
+			  </div>	
+			</div>
+
+
+		  </div>	
+
+		  <div class="row">
+			<div class="col-lg-12 page-header text-center">
+				<h2>11. Otros</h2>
+			</div>
+		  </div>
+		  <div class="container">
+			<div class="row ">
+			  <div class="col-lg-3 col-sm-3 text-left">
+				<p><b>Manejo de software especializado?</b></p>
+			  </div>
+			  <div class="col-lg-3 col-sm-3 text-center">
+				 <div class="input-group">
+					 <div class="input-group-addon">
+						 <i class="fa fa-times"></i>
+					 </div> <select name="software_especilizado" id="software_especilizado" class="form-control"><option value="0">Seleccione una opción </option><option value="1">SI</option><option value="2">NO</option></select> 
+				  </div>
+			  </div>
+			  <div class="col-lg-3 col-sm-3 text-left">
+				<p><b>Indique los programas que se utilizan</b></p>
+			  </div>
+			  <div class="col-lg-3 col-sm-3 text-center">
+
+				 <textarea class="form-control" form="general_form" name="que_programas" maxlength="150"></textarea>
+
+			  </div>
+			</div>
+			<div class="row">
+			  <div class="col-lg-4 col-sm-4 text-left">
+				<p><b>Poseen licencias de sus softwares?</b></p>
+			  </div>
+			  <div class="col-lg-6 col-sm-6 text-center">
+				 <div class="input-group">
+					 <div class="input-group-addon">
+						 <i class="fa fa-times"></i>
+					 </div> <select name="licencias_software" id="licencias_software" class="form-control"><option value="0">Seleccione una opción </option><option value="1">SI</option><option value="2">NO</option></select> 
+				  </div>
+			  </div>	
+			</div>
+			<div class="row">
+			  <div class="col-lg-4 col-sm-4 text-left">
+				<p><b>Se maneja dinero en efectivo?</b></p>
+			  </div>
+			  <div class="col-lg-6 col-sm-6 text-center">
+				 <div class="input-group">
+					 <div class="input-group-addon">
+						 <i class="fa fa-money"></i>
+					 </div>  <select name="dinero_efectivo" id="dinero_efectivo" class="form-control"><option value="0">Seleccione una opción </option><option value="1">SI</option><option value="2">NO</option></select>  
+				  </div>
+			  </div>	
+			</div>
+			<div class="row">
+			  <div class="col-lg-4 col-sm-4 text-left">
+				<p><b>Cual es el monto promedio mensual</b></p>
+			  </div>
+			  <div class="col-lg-6 col-sm-6 text-center">
+				 <div class="input-group">
+					 <div class="input-group-addon">
+						 <i class="fa fa-money"></i> </div>
+						<input class="form-control" type="number" name="monto_avg_mensual" min="0" max="999999999999999">
+
+					 </div>
+				</div>	
+			</div>
+
+
+		  </div>
+
+		 <div class="row">
+			<div class="col-lg-12 page-header text-center">
+				<h2>11. Siniestralidad</h2>
+			</div>
+		  </div>
+		  <div class="container">
+
+			 <div class="row">
+			  <div class="col-lg-2 col-xs-2 text-center">
+			  <p><b>Siniestro</b></p>
+			  </div>
+			   <div class="col-lg-2 col-xs-2 text-center">
+			  <p><b>Bien afectado</b></p>
+			  </div>
+			   <div class="col-lg-2 col-xs-2 text-center">
+			  <p><b>VR Perdida</b></p>
+			  </div>
+			   <div class="col-lg-2 col-xs-2 text-center">
+			  <p><b>Se uso póliza</b></p>
+			  </div>
+			  <div class="col-lg-2 col-xs-2 text-center">
+			  <p><b>Valor indemnización</b></p>
+			  </div>
+			  <div class="col-lg-2 col-xs-2 text-center">
+			  <p><b>Correctivos realizados</b></p>
+			  </div>
+
+			 </div>
+			 <div class="row">
+				<div class="col-lg-2 col-xs-2 text-center">
+				   <input class="form-control" type="text" name="siniestro_1" maxlength="30">
+				</div> 
+				 <div class="col-lg-2 col-xs-2 text-center">
+				   <input class="form-control" type="text" name="bien_afectado_1" maxlength="20">
+				</div> 
+				 <div class="col-lg-2 col-xs-2 text-center">
+				   <input class="form-control" type="number" name="vr_perdida_1" min="1" max="9999999999">
+				</div> 
+				 <div class="col-lg-2 col-xs-2 text-center">
+				   <select name="poliza_si_1" id="poliza_si_1" class="form-control"><option value="0">Seleccione</option><option value="1">SI</option><option value="2">NO</option></select> 
+				</div> 
+				 <div class="col-lg-2 col-xs-2 text-center">
+				   <input class="form-control" type="number" name="valor_indem_1" min="1" max="9999999999">
+				</div> 
+				 <div class="col-lg-2 col-xs-2 text-center">
+				   <input class="form-control" type="text" name="correctivos_1" maxlength="100">
+				</div> 
+
+			 </div>
+			 <div class="row">
+				<div class="col-lg-2 col-xs-2 text-center">
+				   <input class="form-control" type="text" name="siniestro_2" maxlength="30">
+				</div> 
+				 <div class="col-lg-2 col-xs-2 text-center">
+				   <input class="form-control" type="text" name="bien_afectado_2" maxlength="20">
+				</div> 
+				 <div class="col-lg-2 col-xs-2 text-center">
+				   <input class="form-control" type="number" name="vr_perdida_2" min="1" max="999999999999">
+				</div> 
+				 <div class="col-lg-2 col-xs-2 text-center">
+				   <select name="poliza_si_2" id="poliza_si_2" class="form-control"><option value="0">Seleccione</option><option value="1">SI</option><option value="2">NO</option></select> 
+				</div> 
+				 <div class="col-lg-2 col-xs-2 text-center">
+				   <input class="form-control" type="number" name="valor_indem_2" min="1" max="999999999999">
+				</div> 
+				 <div class="col-lg-2 col-xs-2 text-center">
+				   <input class="form-control" type="text" name="correctivos_2" maxlength="100">
+				</div> 
+
+			 </div>
+			 <div class="row">
+				<div class="col-lg-2 col-xs-2 text-center">
+				   <input class="form-control" type="text" name="siniestro_3" maxlength="30">
+				</div> 
+				 <div class="col-lg-2 col-xs-2 text-center">
+				   <input class="form-control" type="text" name="bien_afectado_3" maxlength="20">
+				</div> 
+				 <div class="col-lg-2 col-xs-2 text-center">
+				   <input class="form-control" type="number" name="vr_perdida_3" min="1" max="9999999999">
+				</div> 
+				 <div class="col-lg-2 col-xs-2 text-center">
+				   <select name="poliza_si_3" id="poliza_si_3" class="form-control"><option value="0">Seleccione</option><option value="1">SI</option><option value="2">NO</option></select> 
+				</div> 
+				 <div class="col-lg-2 col-xs-2 text-center">
+				   <input class="form-control" type="number" name="valor_indem_3" min="1" max="9999999999">
+				</div> 
+				 <div class="col-lg-2 col-xs-2 text-center">
+				   <input class="form-control" type="text" name="correctivos_3" maxlength="100">
+				</div> 
+
+			 </div>
+
+		  </div>
+
+		  <div class="row">
+			<div class="container">
+				<div class="col-lg-3 ">
+				</div> 
+				<div class="col-lg-6 page-header text-center">
+					 <button type="submit" form="general_form" class="btn btn-success form-control" id="guardar1" value="Submit">Guardar</button>
+				</div>
+				<div class="col-lg-3">
+				</div> 
+			  </div>
+		  </div>
+
+
+
+
+
+
+
+
+
+
+		</section>
+		<div class="well"> </div>
+	</form>
+	   </div>	
+	<div class="tab-pane fade " id="profile">
+			<form id="general_evaluacion_riesgos_form">
+			  <section class="formulario">
+				  <div class="row">
+					<div class="col-lg-12 page-header text-center">
+					  <h1>Incendio</h1>
+					</div>
+				  </div>
+				  <div class="container">
+					  <div class="row">
+						  <div class="col-lg-12 col-sm-12 text-center">
+							<textarea class="form-control" rows="5" form="general_evaluacion_riesgos_form" name="descripccion_incendio" maxlength="400" placeholder="Describa:
+							1. Inflamabilidad de materiales y producto almacenado.
+							2. Sistemas de detección y protección contra incendio.
+							3. Concepto Ingeniero.
+							" title="Describa:
+									 1. Inflamabilidad de materiales y producto almacenado.
+									 2. Sistemas de detección y protección contra incendio.
+									 3. Concepto Ingeniero.
+							"></textarea>
+							 &nbsp;
+						  </div>
+					 </div>
+					  
+					  <div class="row">
+						  <div class="col-lg-6 text-left">
+							  <h3>Extintores</h3>
+						  </div>
+						  <div class="col-lg-6 text-left">
+							  <h3>Prevención</h3>
+						  </div>
+					  </div>
+					  
+					  <div class="row">
+						  <div class="col-lg-3 col-sm-3 text-left">
+							<p><b>Numero de extintores</b></p>
+						  </div>
+						  <div class="col-lg-3 col-sm-3 text-center">
+							  <div class="input-group">
+								 <div class="input-group-addon">
+									 <i class="fa fa-hashtag"></i>
+								 </div> <input class="form-control" type="number" name="numero_extintores" min="0" max="999">
+							  </div>
+						  </div>
+						  <div class="col-lg-3 col-sm-3 text-left">
+							<p><b>Cuenta con brigada contra incendio</b></p>
+						  </div>
+						  <div class="col-lg-3 col-sm-3 text-center">
+							  <div class="input-group">
+								 <div class="input-group-addon">
+									 <i class="fa fa-times"></i>
+								 </div> <select name="brigada_contraincendio" id="brigada_contraincendio" class="form-control"><option value="0">Seleccione una opción </option><option value="1">SI</option><option value="2">NO</option></select> 
+							  </div>
+						  </div>
+					  </div>
+					  <div class="row">
+					  <div class="col-lg-3 col-sm-3 text-left">
+						<p><b>Son suficientes para el área</b></p>
+					  </div>
+					  <div class="col-lg-3 col-sm-3 text-center">
+						  <div class="input-group">
+							 <div class="input-group-addon">
+								 <i class="fa fa-times"></i>
+							 </div> <select name="suficientes_extintores" id="suficientes_extintores" class="form-control"><option value="0">Seleccione una opción </option><option value="1">SI</option><option value="2">NO</option></select> 
+						  </div>
+					  </div>
+					  <div class="col-lg-3 col-sm-3 text-left">
+						<p><b>Cuantas personas conforman la brigada</b></p>
+					  </div>
+					  <div class="col-lg-3 col-sm-3 text-center">
+						  <div class="input-group">
+							 <div class="input-group-addon">
+								 <i class="fa fa-hashtag"></i>
+							 </div> <input class="form-control" type="number" name="persona_brigada" min="1" max="9999">
+						  </div>
+					  </div>
+					</div>
+					  <div class="row">
+					  <div class="col-lg-3 col-sm-3 text-left">
+						<p><b>Están bien distribuidos</b></p>
+					  </div>
+					  <div class="col-lg-3 col-sm-3 text-center">
+						  <div class="input-group">
+							 <div class="input-group-addon">
+								 <i class="fa fa-times"></i>
+							 </div> <select name="bien_distribuidos" id="bien_distribuidos" class="form-control"><option value="0">Seleccione una opción </option><option value="1">SI</option><option value="2">NO</option></select> 
+						  </div>
+					  </div>
+					  <div class="col-lg-3 col-sm-3 text-left">
+						<p><b>Se realizan simulacros de atención de emergencias</b></p>
+					  </div>
+					  <div class="col-lg-3 col-sm-3 text-center">
+						  <div class="input-group">
+							 <div class="input-group-addon">
+								 <i class="fa fa-times"></i>
+							 </div> <select name="simulacros" id="simulacros" class="form-control"><option value="0">Seleccione una opción </option><option value="1">SI</option><option value="2">NO</option></select> 
+						  </div>
+					  </div>
+						  
+					</div>
+					  <div class="row">
+					  <div class="col-lg-3 col-sm-3 text-left">
+						<p><b>Son visibles y están señalizados</b></p>
+					  </div>
+					  <div class="col-lg-3 col-sm-3 text-center">
+						  <div class="input-group">
+							 <div class="input-group-addon">
+								 <i class="fa fa-times"></i>
+							 </div> <select name="visibles" id="visibles" class="form-control"><option value="0">Seleccione una opción </option><option value="1">SI</option><option value="2">NO</option></select> 
+						  </div>
+					  </div>
+					  <div class="col-lg-3 col-sm-3 text-left">
+						<p><b>Hay prohibición de fumar</b></p>
+					  </div>
+					  <div class="col-lg-3 col-sm-3 text-center">
+						  <div class="input-group">
+							 <div class="input-group-addon">
+								 <i class="fa fa-times"></i>
+							 </div> <select name="fumar" id="fumar" class="form-control"><option value="0">Seleccione una opción </option><option value="1">SI</option><option value="2">NO</option></select> 
+						  </div>
+					  </div>
+					</div>
+					  <div class="row">
+					  <div class="col-lg-3 col-sm-3 text-left">
+						<p><b>Son del tipo adecuado</b></p>
+					  </div>
+					  <div class="col-lg-3 col-sm-3 text-center">
+						  <div class="input-group">
+							 <div class="input-group-addon">
+								 <i class="fa fa-times"></i>
+							 </div> <select name="tipo_adecuado" id="tipo_adecuado" class="form-control"><option value="0">Seleccione una opción </option><option value="1">SI</option><option value="2">NO</option></select> 
+						  </div>
+					  </div>
+					  <div class="col-lg-3 col-sm-3 text-left">
+						<p><b>Hay zonas de fumadores</b></p>
+					  </div>
+					  <div class="col-lg-3 col-sm-3 text-center">
+						  <div class="input-group">
+							 <div class="input-group-addon">
+								 <i class="fa fa-times"></i>
+							 </div> <select name="zonas_fumadores" id="zonas_fumadores" class="form-control"><option value="0">Seleccione una opción </option><option value="1">SI</option><option value="2">NO</option></select> 
+						  </div>
+					  </div>
+					</div>
+					  <div class="row">
+					  <div class="col-lg-3 col-sm-3 text-left">
+						<p><b>Periodicidad de revisión (meses)</b></p>
+					  </div>
+					  <div class="col-lg-3 col-sm-3 text-center">
+						  <div class="input-group">
+							 <div class="input-group-addon">
+								 <i class="fa fa-times"></i>
+							 </div> <select name="revision_periodicidad_meses" id="revision_periodicidad_meses" class="form-control"><option value="0">Seleccione una opción </option><option value="1">SI</option><option value="2">NO</option></select> 
+						  </div>
+					  </div>
+			          <div class="col-lg-3 col-sm-3 text-left">
+						<p><b>Se cuenta con una área de seguridad y salud en el trabajo (SST)</b></p>
+					  </div>
+					  <div class="col-lg-3 col-sm-3 text-center">
+						  <div class="input-group">
+							 <div class="input-group-addon">
+								 <i class="fa fa-times"></i>
+							 </div> <select name="revision_meses" id="revision_meses" class="form-control"><option value="0">Seleccione una opción </option><option value="1">SI</option><option value="2">NO</option></select> 
+						  </div>
+					  </div>
+					</div>
+					  <div class="row">
+					  <div class="col-lg-3 col-sm-3 text-left">
+						<p><b>Personal capacitado en su uso</b></p>
+					  </div>
+					  <div class="col-lg-3 col-sm-3 text-center">
+						  <div class="input-group">
+							 <div class="input-group-addon">
+								 <i class="fa fa-times"></i>
+							 </div> <select name="personal_capacitado" id="personal_capacitado" class="form-control"><option value="0">Seleccione una opción </option><option value="1">SI</option><option value="2">NO</option></select> 
+						  </div>
+					  </div>
+					</div>
+					   &nbsp;
+					  
+					  <div class="row">
+						  <div class="col-lg-6 text-left">
+							  <h3>Sistemas contra incendio</h3>
+						  </div>
+						  <div class="col-lg-6 text-left">
+							  <h3>Instalaciones</h3>
+						  </div>
+					  </div>
+					  
+					  <div class="row">
+						  <div class="col-lg-3 col-sm-3 text-left">
+							<p><b>Cuenta con sistema de detección contra incendio</b></p>
+						  </div>
+						  <div class="col-lg-3 col-sm-3 text-center">
+							  <div class="input-group">
+								 <div class="input-group-addon">
+									 <i class="fa fa-times"></i>
+								 </div> <select name="sistema_contraincendio" id="sistema_contraincendio" class="form-control"><option value="0">Seleccione una opción </option><option value="1">SI</option><option value="2">NO</option></select> 
+							  </div>
+						  </div>
+						  <div class="col-lg-3 col-sm-3 text-left">
+							<p><b>El riesgo cuenta con hidrantes</b></p>
+						  </div>
+						  <div class="col-lg-3 col-sm-3 text-center">
+							  <div class="input-group">
+								 <div class="input-group-addon">
+									 <i class="fa fa-hashtag"></i>
+								 </div><select name="hidrantes" id="hidrantes" class="form-control"><option value="0">Seleccione una opción </option><option value="1">SI</option><option value="2">NO</option></select> 
+							  </div>
+						  </div>
+						  
+					  </div>
+					  <div class="row">
+						  <div class="col-lg-3 col-sm-3 text-left">
+							<p><b>Sistema monitoreado</b></p>
+						  </div>
+						  <div class="col-lg-3 col-sm-3 text-center">
+							  <div class="input-group">
+								 <div class="input-group-addon">
+									 <i class="fa fa-times"></i>
+								 </div> <select name="sistema_monitoreado" id="sistema_monitoreado" class="form-control"><option value="0">Seleccione una opción </option><option value="1">SI</option><option value="2">NO</option></select> 
+							  </div>
+						  </div>
+						  <div class="col-lg-3 col-sm-3 text-left">
+							<p><b>Distancia al hidrante (m)</b></p>
+						  </div>
+						  <div class="col-lg-3 col-sm-3 text-center">
+							  <div class="input-group">
+								 <div class="input-group-addon">
+									 <i class="fa fa-hashtag"></i>
+								 </div> 
+								  <input class="form-control" type="number" name="distancia_hidrante" min="1" max="999">
+
+							  </div>
+						  </div>
+						  
+					  </div>
+					  <div class="row">
+						  <div class="col-lg-3 col-sm-3 text-left">
+							<p><b>Cuenta con sistema de extinción contra incendio</b></p>
+						  </div>
+						  <div class="col-lg-3 col-sm-3 text-center">
+							  <div class="input-group">
+								 <div class="input-group-addon">
+									 <i class="fa fa-times"></i>
+								 </div> <select name="extincion_contraincendio" id="extincion_contraincendio" class="form-control"><option value="0">Seleccione una opción </option><option value="1">SI</option><option value="2">NO</option></select> 
+							  </div>
+						  </div>
+						  <div class="col-lg-3 col-sm-3 text-left">
+							<p><b>Red contra incendio automatica (rociadores)</b></p>
+						  </div>
+						  <div class="col-lg-3 col-sm-3 text-center">
+							  <div class="input-group">
+								 <div class="input-group-addon">
+									 <i class="fa fa-hashtag"></i>
+								 </div><select name="rociadores" id="rociadores" class="form-control"><option value="0">Seleccione una opción </option><option value="1">SI</option><option value="2">NO</option></select> 
+							  </div>
+						  </div>
+						  
+					  </div>
+					  <div class="row">
+						  <div class="col-lg-6 col-sm-6 text-left">
+							
+						  </div>
+						  <div class="col-lg-3 col-sm-3 text-left">
+							<p><b>Cuenta con muros cortafuego</b></p>
+						  </div>
+						  <div class="col-lg-3 col-sm-3 text-center">
+							  <div class="input-group">
+								 <div class="input-group-addon">
+									 <i class="fa fa-hashtag"></i>
+								 </div><select name="muros_cortafuego" id="muros_cortafuego" class="form-control"><option value="0">Seleccione una opción </option><option value="1">SI</option><option value="2">NO</option></select> 
+							  </div>
+						  </div>
+						  
+					  </div>
+					  <div class="row">
+						  <div class="col-lg-6 col-sm-6 text-left">
+							
+						  </div>
+						  <div class="col-lg-3 col-sm-3 text-left">
+							<p><b>Área mayor incendio (m2)</b></p>
+						  </div>
+						  <div class="col-lg-3 col-sm-3 text-center">
+							  <div class="input-group">
+								 <div class="input-group-addon">
+									 <i class="fa fa-hashtag"></i>
+								 </div><input class="form-control" type="number" name="area_mayor_incendio" min="1" max="999999">
+
+							  </div>
+						  </div>
+						  
+					  </div>
+					   &nbsp; &nbsp;
+					  <div class="row">
+						  <div class="col-lg-12 text-center">
+							  <h3>Detalle extintores</h3>
+						  </div>
+					  </div>
+					   <fieldset id="extintor1" class="clonedInputExt">
+							    
+							   <div class="col-lg-3 col-xs-3  col-sm-3 text-left">
+							   <label>Cantidad</label>
+							  <input  class="form-control" type="number" name="cantidad_extintor_1" id="cantidad_extintor_1" min="1" max="999" />
+							   </div>
+							   <div class="col-lg-3 col-xs-3 col-sm-3 text-left">
+							   <label>Capacidad</label>
+							  <input  class="form-control" type="text" name="capacidad_extintor_1" id="capacidad_extintor_1" maxlength="30" />
+							   </div>
+							   <div class="col-lg-3  col-xs-3 col-sm-3 text-left">
+							   <label>Tipo</label>
+							  <input  class="form-control" type="text" name="tipo_extintor_1" id="tipo_extintor_1" maxlength="2" />
+							   </div>
+							   <div class="col-lg-3 col-xs-3 col-sm-3 text-left">
+							   <label>Fecha carga</label>
+							  <input  class="form-control" type="date" name="fecha_carga_extintor_1" id="fecha_carga_extintor_1" />
+							   </div>
+							   
+						   </fieldset>
+						   <fieldset>
+							    <div class="col-lg-10 col-sm-10 col-xs-10 text-left">
+							   </div>
+							   <div class="col-lg-2  col-sm-2 col-xs-2 text-left">
+							  <label>Añadir extintor</label>
+							  <input  class="form-control" type="button" id="btnAddExt" value="+" />
+							  <input class="form-control" type="button" id="btnDelExt" value="-" />
+							   </div>
+						   </fieldset>
+							  
+<!--
+					  <div class="row">
+						  <div class="col-lg-3 col-sm-3 text-center">
+						  <p><b>Cantidad</b></p>
+						  </div>
+						   <div class="col-lg-3 col-sm-3 text-center">
+						  <p><b>Capacidad</b></p>
+						  </div>
+						   <div class="col-lg-3 col-sm-3 text-center">
+						  <p><b>Tipo</b></p>
+						  </div>
+						   <div class="col-lg-3 col-sm-3 text-center">
+						  <p><b>Fecha carga</b></p>
+						  </div>
+					 </div>
+					  <div class="row">
+						<div class="col-lg-3 col-sm-3 text-center">
+						   <input class="form-control" type="number" name="cantidad_detalle_ext1" maxlength="3">
+						</div> 
+						 <div class="col-lg-3 col-sm-3 text-center">
+						   <input class="form-control" type="text" name="capacidad_detalle_ext1" maxlength="30">
+						</div> 
+						 <div class="col-lg-3 col-sm-3 text-center">
+						   <input class="form-control" type="number" name="tipo_detalle_ext1" maxlength="20">
+						</div> 
+						 <div class="col-lg-3 col-sm-3 text-center">
+						   <input class="form-control" type="date" name="fecha_detalle_ext1" >
+						</div> 
+				      </div>
+					  <div class="row">
+						<div class="col-lg-3 col-sm-3 text-center">
+						   <input class="form-control" type="number" name="cantidad_detalle_ext2" maxlength="3">
+						</div> 
+						 <div class="col-lg-3 col-sm-3 text-center">
+						   <input class="form-control" type="text" name="capacidad_detalle_ext2" maxlength="30">
+						</div> 
+						 <div class="col-lg-3 col-sm-3 text-center">
+						   <input class="form-control" type="number" name="tipo_detalle_ext2" maxlength="20">
+						</div> 
+						 <div class="col-lg-3 col-sm-3 text-center">
+						   <input class="form-control" type="date" name="fecha_detalle_ext2" >
+						</div> 
+				      </div>
+					  <div class="row">
+						<div class="col-lg-3 col-sm-3 text-center">
+						   <input class="form-control" type="number" name="cantidad_detalle_ext3" maxlength="3">
+						</div> 
+						 <div class="col-lg-3 col-sm-3 text-center">
+						   <input class="form-control" type="text" name="capacidad_detalle_ext3" maxlength="30">
+						</div> 
+						 <div class="col-lg-3 col-sm-3 text-center">
+						   <input class="form-control" type="number" name="tipo_detalle_ext3" maxlength="20">
+						</div> 
+						 <div class="col-lg-3 col-sm-3 text-center">
+						   <input class="form-control" type="date" name="fecha_detalle_ext3" >
+						</div> 
+				      </div>
+					  <div class="row">
+						<div class="col-lg-3 col-sm-3 text-center">
+						   <input class="form-control" type="number" name="cantidad_detalle_ext4" maxlength="3">
+						</div> 
+						 <div class="col-lg-3 col-sm-3 text-center">
+						   <input class="form-control" type="text" name="capacidad_detalle_ext4" maxlength="30">
+						</div> 
+						 <div class="col-lg-3 col-sm-3 text-center">
+						   <input class="form-control" type="number" name="tipo_detalle_ext4" maxlength="20">
+						</div> 
+						 <div class="col-lg-3 col-sm-3 text-center">
+						   <input class="form-control" type="date" name="fecha_detalle_ext4" >
+						</div> 
+				      </div>
+-->
+					  &nbsp; &nbsp;
+					  <div class="row">
+						  <div class="col-lg-6 text-left">
+							  <h3>Generales</h3>
+						  </div>
+						  <div class="col-lg-6 text-left">
+							  <h3>PML Incendio (%) </h3>
+						  </div>
+					  </div>
+					  <div class="row">
+						  <div class="col-lg-3 col-sm-3 text-left">
+							<p><b>Riesgos fuentes de ignición</b></p>
+						  </div>
+						  <div class="col-lg-3 col-sm-3 text-center">
+							  <div class="input-group">
+								 <div class="input-group-addon">
+									 <i class="fa fa-times"></i>
+								 </div> <select name="riesgos_ignicion" id="riesgos_ignicion" class="form-control"><option value="0">Seleccione una opción </option><option value="1">Alto</option><option value="2">Medio-alto</option><option value="3">Medio</option><option value="4">Bajo</option></select> 
+							  </div>
+						  </div>
+						  <div class="col-lg-3 col-sm-3 text-left">
+							<p><b>Cuantos edificios se ponen en riesgo</b></p>
+						  </div>
+						  <div class="col-lg-3 col-sm-3 text-center">
+							  <div class="input-group">
+								 <div class="input-group-addon">
+									 <i class="fa fa-building"></i>
+								 </div>
+								    <input class="form-control" type="number" name="cuantos_edf_riesgo" min="1" max="999">
+							  </div>
+						  </div>
+						  
+					  </div>
+					  <div class="row">
+						  <div class="col-lg-3 col-sm-3 text-left">
+							<p><b>La actividad de los vecinos representa riesgo incendio?</b></p>
+						  </div>
+						  <div class="col-lg-3 col-sm-3 text-center">
+							  <div class="input-group">
+								 <div class="input-group-addon">
+									 <i class="fa fa-times"></i>
+								 </div> <select name="vecinos_riesgo_incendio" id="vecinos_riesgo_incendio" class="form-control"><option value="0">Seleccione una opción </option><option value="1">SI</option><option value="2">NO</option></select> 
+							  </div>
+						  </div>
+						  <div class="col-lg-3 col-sm-3 text-left">
+							<p><b>Distancia menor entre edificios (m)</b></p>
+						  </div>
+						  <div class="col-lg-3 col-sm-3 text-center">
+							  <div class="input-group">
+								 <div class="input-group-addon">
+									 <i class="fa fa-building"></i>
+								 </div>
+								    <input class="form-control" type="number" name="menor_distancia_edificios" min="1" max="999">
+							  </div>
+						  </div>
+						  
+					  </div>
+					  <div class="row">
+						  <div class="col-lg-3 col-sm-3 text-left">
+							<p><b>Tiempo entre Estación de Bomberos y el predio. (min)</b></p>
+						  </div>
+						  <div class="col-lg-3 col-sm-3 text-center">
+							  <div class="input-group">
+								 <div class="input-group-addon">
+									 <i class="fa fa-times"></i>
+								 </div>
+								  <input class="form-control" type="number" name="tiempo_bomberos_predio" min="1" max="999">
+							  </div>
+						  </div>
+						  <div class="col-lg-3 col-sm-3 text-left">
+							<p><b>Distancia  mayor  entre edificios (mts)</b></p>
+						  </div>
+						  <div class="col-lg-3 col-sm-3 text-center">
+							  <div class="input-group">
+								 <div class="input-group-addon">
+									 <i class="fa fa-building"></i>
+								 </div>
+								    <input class="form-control" type="number" name="mayor_distacia_edificios" min="1" max="99">
+							  </div>
+						  </div>
+						  
+					  </div>
+					  <div class="row">
+						  <div class="col-lg-6 col-sm-6 text-left">
+							
+						  </div>
+						  <div class="col-lg-3 col-sm-3 text-left">
+							<p><b>Se almacenan sustancias quimica en los edificios</b></p>
+						  </div>
+						  <div class="col-lg-3 col-sm-3 text-center">
+							  <div class="input-group">
+								 <div class="input-group-addon">
+									 <i class="fa fa-building"></i>
+								 </div>
+								  <select name="sustancias_quimicas" id="sustancias_quimicas" class="form-control"><option value="0">Seleccione una opción </option><option value="1">SI</option><option value="2">NO</option></select> 
+							  </div>
+						  </div>
+						  
+					  </div>
+					  <div class="row">
+						  <div class="col-lg-6 col-sm-6 text-left">
+							
+						  </div>
+						  <div class="col-lg-3 col-sm-3 text-left">
+							<p><b>Se almacenan sustancias combustibles en los edificios</b></p>
+						  </div>
+						  <div class="col-lg-3 col-sm-3 text-center">
+							  <div class="input-group">
+								 <div class="input-group-addon">
+									 <i class="fa fa-building"></i>
+								 </div>
+								  <select name="sustancias_combustibles" id="sustancias_combustibles" class="form-control"><option value="0">Seleccione una opción </option><option value="1">SI</option><option value="2">NO</option></select> 
+							  </div>
+						  </div>
+						  
+					  </div>
+					  <div class="row">
+						  <div class="col-lg-6 col-sm-6 text-left">
+							
+						  </div>
+						  <div class="col-lg-3 col-sm-3 text-left">
+							<p><b>Indique el monto asegurado mayor del riesgo (Edificios)</b></p>
+						  </div>
+						  <div class="col-lg-3 col-sm-3 text-center">
+							  <div class="input-group">
+								 <div class="input-group-addon">
+									 <i class="fa fa-building"></i>
+								 </div>
+								    <input class="form-control" type="number" name="monto_mayor_riesgo" min="1" max="9999999999">
+							  </div>
+						  </div>
+						  
+					  </div>
+					  <div class="row">
+						  <div class="col-lg-6 col-sm-6 text-left">
+							
+						  </div>
+						  <div class="col-lg-3 col-sm-3 text-left">
+							<p><b>  Establezca un valor APROXIMADO de PML </b></p>
+						  </div>
+						  <div class="col-lg-3 col-sm-3 text-center">
+							  <div class="input-group">
+								 <div class="input-group-addon">
+									 <i class="fa fa-percent"></i>
+								 </div>
+								  
+								    <input class="form-control" type="number" name="valor_aprox_PML"  min="0" max="100">
+
+							  </div>
+						  </div>
+						  
+					  </div>
+					
+				 </div>
+				  
+				  
+				  <div class="row">
+					<div class="col-lg-12 page-header text-center">
+					  <h1>Explosión</h1>
+					</div>
+				  </div>
+				  <div class="container"> 
+					  <div class="row">
+						  <div class="col-lg-12 col-sm-12 text-center">
+							<textarea class="form-control" rows="5" form="general_evaluacion_riesgos_form" name="descripccion_explosion" maxlength="400" placeholder="Describa:
+							1. Inflamabilidad de materiales y producto almacenado.
+							2. Sistemas de detección y protección contra incendio.
+							3. Concepto Ingeniero." title="Describa:
+							1. Inflamabilidad de materiales y producto almacenado.
+							2. Sistemas de detección y protección contra incendio.
+							3. Concepto Ingeniero."></textarea>
+							 &nbsp;
+						  </div>
+					 </div>
+					  
+					  <div class="row">
+						  <div class="col-lg-6 col-sm-6 text-left">
+							<p><b>Se almacenan o manipulan productos inflamables o explosivos</b></p>
+						  </div>
+						  <div class="col-lg-6 col-sm-6 text-center">
+							  <div class="input-group">
+								 <div class="input-group-addon">
+									 <i class="fa fa-times"></i>
+								 </div> <select name="almacenan_explosivos" id="almacenan_explosivos" class="form-control"><option value="0">Seleccione una opción </option><option value="1">SI</option><option value="2">NO</option></select> 
+							  </div>
+						  </div> 
+					  </div>
+					  <div class="row">
+						  <div class="col-lg-6 col-sm-6 text-left">
+							<p><b>Inflamabilidad de los Combustibles</b></p>
+						  </div>
+						  <div class="col-lg-6 col-sm-6 text-center">
+							  <div class="input-group">
+								 <div class="input-group-addon">
+									 <i class="fa fa-building"></i>
+								 </div>
+								  <select name="inflamabilidad_combustibles" id="inflamabilidad_combustibles" class="form-control"><option value="0">Seleccione una opción </option><option value="1">No aplica</option><option value="2">Alto</option><option value="3">Medio</option><option value="4">Bajo</option></select> 
+							  </div>
+						  </div>
+					  </div>
+					  <div class="row">
+						  <div class="col-lg-6 col-sm-6 text-left">
+							<p><b>Se operan calderas</b></p>
+						  </div>
+						  <div class="col-lg-6 col-sm-6 text-center">
+							  <div class="input-group">
+								 <div class="input-group-addon">
+									 <i class="fa fa-building"></i>
+								 </div>
+								  <select name="operan_calderas" id="operan_calderas" class="form-control"><option value="0">Seleccione una opción </option><option value="1">SI</option><option value="2">NO</option></select> 
+							  </div>
+						  </div>
+					  </div>
+					  <div class="row">
+						  <div class="col-lg-6 col-sm-6 text-left">
+							<p><b>Cuentan con protección anti explosión </b></p>
+						  </div>
+						  <div class="col-lg-6 col-sm-6 text-center">
+							  <div class="input-group">
+								 <div class="input-group-addon">
+									 <i class="fa fa-building"></i>
+								 </div>
+								  <select name="proteccion_antiexplosion" id="proteccion_antiexplosion" class="form-control"><option value="0">Seleccione una opción </option><option value="1">SI</option><option value="2">NO</option></select> 
+							  </div>
+						  </div>
+					  </div>
+					  <div class="row">
+						  <div class="col-lg-6 col-sm-6 text-left">
+							<p><b>Cuales</b></p>
+						  </div>
+						  <div class="col-lg-6 col-sm-6 text-center">
+							  <div class="input-group">
+								 <div class="input-group-addon">
+									 <i class="fa fa-building"></i>
+								 </div>
+								  <input class="form-control" type="text" name="proteccion_antiexplosion_cuales" maxlength="50">
+							  </div>
+						  </div>
+					  </div>
+				  </div>
+				  
+				  <div class="row">
+					<div class="col-lg-12 page-header text-center">
+					  <h1>Terremoto</h1>
+					</div>
+				  </div>
+				  <div class="container"> 
+					  <div class="row">
+						  <div class="col-lg-12 col-sm-12 text-center">
+							<textarea class="form-control" rows="5" form="general_evaluacion_riesgos_form" name="descripccion_terremoto" maxlength="400"></textarea>
+							 &nbsp;
+						  </div>
+					 </div>
+					 
+					  <div class="row">
+						  <div class="col-lg-6 col-sm-6 text-left">
+							<p><b>La zona en donde esta ubicado el riesgo esta expuesta a sismos graves</b></p>
+						  </div>
+						  <div class="col-lg-6 col-sm-6 text-center">
+							  <div class="input-group">
+								 <div class="input-group-addon">
+									 <i class="fa fa-times"></i>
+								 </div> <select name="zona_de_sismos" id="zona_de_sismos" class="form-control"><option value="0">Seleccione una opción </option><option value="1">SI</option><option value="2">NO</option></select> 
+							  </div>
+						  </div> 
+					  </div>
+					  <div class="row">
+						  <div class="col-lg-6 col-sm-6 text-left">
+							<p><b>Establezca la clasificacion de la zona de acuerdo al mapa mundial de riesgos de la Munchener</b></p>
+						  </div>
+						  <div class="col-lg-6 col-sm-6 text-center">
+							  <div class="input-group">
+								 <div class="input-group-addon">
+									 <i class="fa fa-hashtag"></i>
+								 </div>
+								  <input class="form-control" type="number" name="clasificacion_munchener" min="1" max="9">
+							  </div>
+						  </div>
+					  </div>
+					  <div class="row">
+						  <div class="col-lg-6 col-sm-6 text-left">
+							<p><b>Durante el ultimo año se han registrado sismos fuertes</b></p>
+						  </div>
+						  <div class="col-lg-6 col-sm-6 text-center">
+							  <div class="input-group">
+								 <div class="input-group-addon">
+									 <i class="fa fa-building"></i>
+								 </div>
+								  <select name="sismos_recientes" id="sismos_recientes" class="form-control"><option value="0">Seleccione una opción </option><option value="1">SI</option><option value="2">NO</option></select> 
+							  </div>
+						  </div>
+					  </div>
+					  <div class="row">
+						  <div class="col-lg-6 col-sm-6 text-left">
+							<p><b>Si la respuesta anterior fue si, indique cuantos eventos se presentaron</b></p>
+						  </div>
+						  <div class="col-lg-6 col-sm-6 text-center">
+							  <div class="input-group">
+								 <div class="input-group-addon">
+									 <i class="fa fa-hashtag"></i>
+								 </div>
+								  <input class="form-control" type="number" name="cuantos_sismos" min="0" max="99">
+							  </div>
+						  </div>
+					  </div>
+					  <div class="row">
+						  <div class="col-lg-6 col-sm-6 text-left">
+							<p><b>Se han afectado las construcciones debido a terremotos</b></p>
+						  </div>
+						  <div class="col-lg-6 col-sm-6 text-center">
+							  <div class="input-group">
+								 <div class="input-group-addon">
+									 <i class="fa fa-building"></i>
+								 </div>
+								  <select name="afectacionx_sismo" id="afectacionx_sismo" class="form-control"><option value="0">Seleccione una opción </option><option value="1">SI</option><option value="2">NO</option></select> 
+							  </div>
+						  </div>
+					  </div>
+					  <div class="row">
+						  <div class="col-lg-6 col-sm-6 text-left">
+							<p><b>Ha sido necesario dejar de operar en edificios afectados por un sismo fuerte</b></p>
+						  </div>
+						  <div class="col-lg-6 col-sm-6 text-center">
+							  <div class="input-group">
+								 <div class="input-group-addon">
+									 <i class="fa fa-building"></i>
+								 </div>
+								  <select name="fuera_opercion_edificiosxsismo" id="fuera_opercion_edificiosxsismo" class="form-control"><option value="0">Seleccione una opción </option><option value="1">SI</option><option value="2">NO</option></select> 
+							  </div>
+						  </div>
+					  </div>
+				  </div>
+				  
+				  <div class="row">
+					<div class="col-lg-12 page-header text-center">
+					  <h1>Sustracción</h1>
+					</div>
+				  </div>
+				  <div class="container"> 
+					  <div class="row">
+						  <div class="col-lg-12 col-sm-12 text-center">
+							<textarea class="form-control" rows="5" form="general_evaluacion_riesgos_form" name="descripccion_sustraccion" maxlength="400" placeholder="Describa:
+					1. Riesgos presentes en las instalaciones. (Por ubicación, vulnerabilidad instalaciones, Identifique Productos de Alto Valor economico y comercial)
+					2. Describa las protecciones y si son adecuadas para el riesgo.
+							" title="Describa:
+									 1. Riesgos presentes en las instalaciones. (Por ubicación, vulnerabilidad instalaciones, Identifique Productos de Alto Valor economico y comercial)
+									 2. Describa las protecciones y si son adecuadas para el riesgo.
+							"></textarea>
+							 &nbsp;
+						  </div>
+					 </div>
+					 <div class="row">
+						  <div class="col-lg-6 text-left">
+							  <h3>Protecciones fisicas</h3>
+						  </div>
+						  <div class="col-lg-6 text-left">
+							  <h3>Vigilancia </h3>
+						  </div>
+					  </div>
+					  <div class="row">
+						  <div class="col-lg-3 col-sm-3 text-left">
+							<p><b>El riesgo tiene un adecuado cerramiento perimetral</b></p>
+						  </div>
+						  <div class="col-lg-3 col-sm-3 text-center">
+							  <div class="input-group">
+								 <div class="input-group-addon">
+									 <i class="fa fa-times"></i>
+								 </div> <select name="cerramiento_perimetral" id="cerramiento_perimetral" class="form-control"><option value="0">Seleccione una opción </option><option value="1">SI</option><option value="2">NO</option></select> 
+							  </div>
+						  </div>
+						  <div class="col-lg-3 col-sm-3 text-left">
+							<p><b>Se tiene vigilancia</b></p>
+						  </div>
+						  <div class="col-lg-3 col-sm-3 text-center">
+							  <div class="input-group">
+								 <div class="input-group-addon">
+									 <i class="fa fa-times"></i>
+								 </div> <select name="vigilancia" id="vigilancia" class="form-control"><option value="0">Seleccione una opción </option><option value="1">SI</option><option value="2">NO</option></select> 
+							  </div>
+						  </div> 
+					  </div>
+					  <div class="row">
+						  <div class="col-lg-3 col-sm-3 text-left">
+							<p><b>Cantidad de entradas</b></p>
+						  </div>
+						  <div class="col-lg-3 col-sm-3 text-center">
+							  <div class="input-group">
+								 <div class="input-group-addon">
+									 <i class="fa fa-hashtag"></i>
+								 </div> 
+								  <input class="form-control" type="number" name="entradas_vigilancia" min="1" max="999">
+							  </div>
+						  </div>
+						  <div class="col-lg-3 col-sm-3 text-left">
+							<p><b>Tipo de vigilancia</b></p>
+						  </div>
+						  <div class="col-lg-3 col-sm-3 text-center">
+							  <div class="input-group">
+								 <div class="input-group-addon">
+									 <i class="fa fa-times"></i>
+								 </div> <select name="tipo_vigilancia" id="tipo_vigilancia" class="form-control"><option value="0">Seleccione una opción </option><option value="1">No aplica</option><option value="2">Propia</option><option value="2">Privada</option></select> 
+							  </div>
+						  </div> 
+					  </div>
+					  <div class="row">
+						  <div class="col-lg-3 col-sm-3 text-left">
+							<p><b>El riesgo tiene entrada independiente</b></p>
+						  </div>
+						  <div class="col-lg-3 col-sm-3 text-center">
+							  <div class="input-group">
+								 <div class="input-group-addon">
+									 <i class="fa fa-times"></i>
+								 </div> <select name="riesgo_entrada_indp" id="riesgo_entrada_indp" class="form-control"><option value="0">Seleccione una opción </option><option value="1">SI</option><option value="2">NO</option></select> 
+							  </div>
+						  </div>
+						  <div class="col-lg-3 col-sm-3 text-left">
+							<p><b>Numero de vigilantes</b></p>
+						  </div>
+						  <div class="col-lg-3 col-sm-3 text-center">
+							  <div class="input-group">
+								 <div class="input-group-addon">
+									 <i class="fa fa-hashtag"></i>
+								 </div> 
+								   <input class="form-control" type="number" name="numero_vigilantes" min="1" max="99">
+							  </div>
+						  </div> 
+					  </div>
+					  <div class="row">
+						  <div class="col-lg-3 col-sm-3 text-left">
+							<p><b>El riesgo se encuentra en un centro comercial</b></p>
+						  </div>
+						  <div class="col-lg-3 col-sm-3 text-center">
+							  <div class="input-group">
+								 <div class="input-group-addon">
+									 <i class="fa fa-times"></i>
+								 </div> <select name="riesgo_centro_comercial" id="riesgo_centro_comercial" class="form-control"><option value="0">Seleccione una opción </option><option value="1">SI</option><option value="2">NO</option></select> 
+							  </div>
+						  </div>
+						  <div class="col-lg-3 col-sm-3 text-left">
+							<p><b>Duración del turno (horas)</b></p>
+						  </div>
+						  <div class="col-lg-3 col-sm-3 text-center">
+							  <div class="input-group">
+								 <div class="input-group-addon">
+									 <i class="fa fa-clock-o"></i>
+								 </div> 
+								  <input class="form-control" type="number" name="duracion_turno" min="1" max="99">
+							  </div>
+						  </div> 
+					  </div>
+					  <div class="row">
+						  <div class="col-lg-3 col-sm-3 text-left">
+							<p><b>El riesgo cuenta con porteria</b></p>
+						  </div>
+						  <div class="col-lg-3 col-sm-3 text-center">
+							  <div class="input-group">
+								 <div class="input-group-addon">
+									 <i class="fa fa-building"></i>
+								 </div> <select name="riesgo_porteria" id="riesgo_porteria" class="form-control"><option value="0">Seleccione una opción </option><option value="1">SI</option><option value="2">NO</option></select> 
+							  </div>
+						  </div>
+						  <div class="col-lg-3 col-sm-3 text-left">
+							<p><b>Vigilancia armada</b></p>
+						  </div>
+						  <div class="col-lg-3 col-sm-3 text-center">
+							  <div class="input-group">
+								 <div class="input-group-addon">
+									 <i class="fa fa-fire"></i>
+								 </div> 
+								  <select name="vigilancia_armada" id="vigilancia_armada" class="form-control"><option value="0">Seleccione una opción </option><option value="1">SI</option><option value="2">NO</option></select>
+							  </div>
+						  </div> 
+					  </div>
+					  <div class="row">
+						  <div class="col-lg-3 col-sm-3 text-left">
+							<p><b>Cantidad personas que manejan llaves de apertura</b></p>
+						  </div>
+						  <div class="col-lg-3 col-sm-3 text-center">
+							  <div class="input-group">
+								 <div class="input-group-addon">
+									 <i class="fa fa-key"></i>
+								 </div> 
+								   <input class="form-control" type="number" name="cantidad_personas_llaves" min="1" max="99">
+							  </div>
+						  </div>
+						  <div class="col-lg-3 col-sm-3 text-left">
+							<p><b>Vigilancia en horarios no laborales</b></p>
+						  </div>
+						  <div class="col-lg-3 col-sm-3 text-center">
+							  <div class="input-group">
+								 <div class="input-group-addon">
+									 <i class="fa fa-clock-o"></i>
+								 </div> 
+								  <select name="vigilancia_horario_no_laboral" id="vigilancia_horario_no_laboral" class="form-control"><option value="0">Seleccione una opción </option><option value="1">SI</option><option value="2">NO</option></select> 
+							  </div>
+						  </div> 
+					  </div>
+					  <div class="row">
+						  <div class="col-lg-3 col-sm-3 text-left">
+							<p><b>Cuenta con concertina</b></p>
+						  </div>
+						  <div class="col-lg-3 col-sm-3 text-center">
+							  <div class="input-group">
+								 <div class="input-group-addon">
+									 <i class="fa fa-times"></i>
+								 </div> <select name="concertina" id="concertina" class="form-control"><option value="0">Seleccione una opción </option><option value="1">SI</option><option value="2">NO</option></select> 
+							  </div>
+						  </div>
+						  <div class="col-lg-3 col-sm-3 text-left">
+							<p><b>Se controla el acceso</b></p>
+						  </div>
+						  <div class="col-lg-3 col-sm-3 text-center">
+							  <div class="input-group">
+								 <div class="input-group-addon">
+									 <i class="fa fa-forward"></i>
+								 </div> <select name="acceso_controlado" id="acceso_controlado" class="form-control"><option value="0">Seleccione una opción </option><option value="1">SI</option><option value="2">NO</option></select> 
+							  </div>
+						  </div> 
+					  </div>
+					  <div class="row">
+						  <div class="col-lg-3 col-sm-3 text-left">
+							<p><b>Protección adecuada de puertas exteriores</b></p>
+						  </div>
+						  <div class="col-lg-3 col-sm-3 text-center">
+							  <div class="input-group">
+								 <div class="input-group-addon">
+									 <i class="fa fa-outdent"></i>
+								 </div> <select name="proteccion_bien_puertas_ext" id="proteccion_bien_puertas_ext" class="form-control"><option value="0">Seleccione una opción </option><option value="1">SI</option><option value="2">NO</option></select> 
+							  </div>
+						  </div>
+						  <div class="col-lg-3 col-sm-3 text-left">
+							<p><b>Supervisión</b></p>
+						  </div>
+						  <div class="col-lg-3 col-sm-3 text-center">
+							  <div class="input-group">
+								 <div class="input-group-addon">
+									 <i class="fa fa-user-circle"></i>
+								 </div> <select name="supervision" id="supervision" class="form-control"><option value="0">Seleccione una opción </option><option value="1">No aplica</option><option value="2">Personal</option><option value="2">Radio</option></select> 
+							  </div>
+						  </div> 
+					  </div>
+					  <div class="row">
+						  <div class="col-lg-3 col-sm-3 text-left">
+							<p><b>Protección adecuada de ventanas y claraboyas</b></p>
+						  </div>
+						  <div class="col-lg-3 col-sm-3 text-center">
+							  <div class="input-group">
+								 <div class="input-group-addon">
+									 <i class="fa fa-window-restore"></i>
+								 </div> <select name="proteccion_claraboyas" id="proteccion_claraboyas" class="form-control"><option value="0">Seleccione una opción </option><option value="1">SI</option><option value="2">NO</option></select> 
+							  </div>
+						  </div>
+						  <div class="col-lg-3 col-sm-3 text-left">
+							<p><b>Tiempo a la estación de policia más cercana (min)</b></p>
+						  </div>
+						  <div class="col-lg-3 col-sm-3 text-center">
+							  <div class="input-group">
+								 <div class="input-group-addon">
+									 <i class="fa fa-clock-o"></i>
+								 </div> 
+								  <input class="form-control" type="number" name="tiempo_estacion_cercana" min="1" max="99">
+							  </div>
+						  </div> 
+					  </div>
+					  <div class="row">
+						  <div class="col-lg-6 text-left">
+							  <h3>Protecciones electronicas</h3>
+						  </div>
+					  </div>
+					  <div class="row">
+						  <div class="col-lg-3 col-sm-3 text-left">
+							<p><b>El riesgo cuenta con alarma</b></p>
+						  </div>
+						  <div class="col-lg-3 col-sm-3 text-center">
+							  <div class="input-group">
+								 <div class="input-group-addon">
+									 <i class="fa fa-warning"></i>
+								 </div> <select name="riesgo_alarma" id="riesgo_alarma" class="form-control"><option value="0">Seleccione una opción </option><option value="1">SI</option><option value="2">NO</option></select> 
+							  </div>
+						  </div>
+						  
+					  </div>
+					  <div class="row">
+						  <div class="col-lg-3 col-sm-3 text-left">
+							<p><b>Tipo alarma</b></p>
+						  </div>
+						  <div class="col-lg-3 col-sm-3 text-center">
+							  <div class="input-group">
+								 <div class="input-group-addon">
+									 <i class="fa fa-warning"></i>
+								 </div> <select name="tipo_alarma" id="tipo_alarma" class="form-control"><option value="0">Seleccione una opción </option><option value="1">Sonora</option><option value="2">Monitoreo con reacción</option><option value="3">Monitoreo sin reacción</option></select> 
+							  </div>
+						  </div>
+						  
+					  </div>
+					  <div class="row">
+						  <div class="col-lg-3 col-sm-3 text-left">
+							<p><b>Alarma monitoreada</b></p>
+						  </div>
+						  <div class="col-lg-3 col-sm-3 text-center">
+							  <div class="input-group">
+								 <div class="input-group-addon">
+									 <i class="fa fa-warning"></i>
+								 </div> <select name="alarma_monitoreada" id="alarma_monitoreada" class="form-control"><option value="0">Seleccione una opción </option><option value="1">SI</option><option value="2">NO</option></select> 
+							  </div>
+						  </div>
+						  
+					  </div>
+					  <div class="row">
+						  <div class="col-lg-3 col-sm-3 text-left">
+							<p><b>El riesgo cuenta con botones de panico</b></p>
+						  </div>
+						  <div class="col-lg-3 col-sm-3 text-center">
+							  <div class="input-group">
+								 <div class="input-group-addon">
+									 <i class="fa fa-warning"></i>
+								 </div> <select name="boton_panico" id="boton_panico" class="form-control"><option value="0">Seleccione una opción </option><option value="1">SI</option><option value="2">NO</option></select> 
+							  </div>
+						  </div>
+						  
+					  </div>
+					  <div class="row">
+						  <div class="col-lg-3 col-sm-3 text-left">
+							<p><b>Comunicación con la policia o empresas de seguridad</b></p>
+						  </div>
+						  <div class="col-lg-3 col-sm-3 text-center">
+							  <div class="input-group">
+								 <div class="input-group-addon">
+									 <i class="fa fa-warning"></i>
+								 </div> <select name="comunicacion_autoridades" id="comunicacion_autoridades" class="form-control"><option value="0">Seleccione una opción </option><option value="1">No aplica</option><option value="2">Radio</option><option value="3">Telefono fijo</option><option value="4">Celular</option></select> 
+							  </div>
+						  </div>
+						  
+					  </div>
+					  <div class="row">
+						  <div class="col-lg-3 col-sm-3 text-left">
+							<p><b>Personal Responsable de seguridad (FALTA REVISAR)</b></p>
+						  </div>
+						  <div class="col-lg-3 col-sm-3 text-center">
+							  <div class="input-group">
+								 <div class="input-group-addon">
+									 <i class="fa fa-warning"></i>
+								 </div> <select name="personal_seguridad" id="personal_seguridad" class="form-control"><option value="0">Seleccione una opción </option><option value="1">SI</option><option value="2">NO</option></select> 
+							  </div>
+						  </div>
+						  
+					  </div>
+					  
+				  </div>
+
+				  <div class="row">
+					<div class="col-lg-12 page-header text-center">
+					  <h1>Maquinaria</h1>
+					<input type="hidden" id="cuantas_maquinas" name="cuantas_maquinas" value="1">
+					</div>
+				  </div>
+				  <div class="container"> 
+					  <div class="row">
+						  <div class="col-lg-12 col-sm-12 text-center">
+							<textarea class="form-control" rows="5" form="general_evaluacion_riesgos_form" name="descripccion_maquinarias" maxlength="400" placeholder="Describa:
+									1. Estado gereral de la maquinaria.
+									2. Limpieza.
+									3. Maquinaria Critica.
+									4. Ubicación Maquinaria.
+									" title="Describa:
+									1. Estado gereral de la maquinaria.
+									2. Limpieza.
+									3. Maquinaria Critica.
+									4. Ubicación Maquinaria.
+
+							"></textarea>
+							 &nbsp;
+						  </div>
+					 </div>
+					  <div class="row">
+						  <div class="col-lg-6 text-left">
+							  <h3>Maquinaria crítica para la opreación</h3>
+						  </div>
+					  </div>
+					  <div class="row">
+						 
+							  
+						   <fieldset id="maquinaria1" class="clonedInputMaq">
+							    <div class="col-lg-2  text-left">
+							  		<label>Nombre</label>
+									<input  class="form-control" type="text" name="nombre_maquinaria_1" id="nombre_maquinaria_1" maxlength="30" />
+							   </div>
+							   <div class="col-lg-2  text-left">
+							   <label>Marca</label>
+							  <input  class="form-control" type="text" name="marca_maquinaria_1" id="marca_maquinaria_1" maxlength="20" />
+							   </div>
+							   <div class="col-lg-1  text-left">
+							   <label>Cantidad</label>
+							  <input  class="form-control" type="number" name="cantidad_maquinaria_1" id="cantidad_maquinaria_1" min="1" max="999" />
+							   </div>
+							   <div class="col-lg-2  text-left">
+							   <label>Edad marquinaria (años)</label>
+							  <input  class="form-control" type="number" name="edad_maquinaria_1" id="edad_maquinaria_1" min="1" max="999" />
+							   </div>
+							   <div class="col-lg-2  text-left">
+							   <label>Mantenimiento (meses)</label>
+							  <input  class="form-control" type="numebr" name="mantenimiento_maquinaria_1" id="mantenimiento_maquinaria_1" maxlength="2" />
+							   </div>
+							   <div class="col-lg-3  text-left">
+							   <label>Siniestralidad y reparaciones </label>
+							  <input  class="form-control" type="text" name="syr_maquinaria_1" id="syr_maquinaria_1" maxlength="50" />
+							   </div>
+							   
+						   </fieldset>
+						   <fieldset>
+							    <div class="col-lg-10  text-left">
+							   </div>
+							   <div class="col-lg-2  text-left">
+							  <label>Añadir maquina</label>
+							  <input  class="form-control" type="button" id="btnAddMaq" value="+" />
+							  <input class="form-control" type="button" id="btnDelMaq" value="-" />
+							   </div>
+						   </fieldset>
+							  
+						  
+					  </div>
+					  
+					  <div class="row">
+						  <div class="col-lg-6 text-left">
+							  <h3>Estado maquinaria</h3>
+						  </div>
+						  <div class="col-lg-6 text-left">
+							  <h3>Operación maquinaria</h3>
+						  </div>
+					  </div>
+					  <div class="row">
+						  <div class="col-lg-3 col-sm-3 text-left">
+							<p><b>La maquinaria se encuentra limpia y sin material residual</b></p>
+						  </div>
+						  <div class="col-lg-3 col-sm-3 text-center">
+							  <div class="input-group">
+								 <div class="input-group-addon">
+									 <i class="fa fa-times-circle"></i>
+								 </div> <select name="maquinaria_limpia" id="maquinaria_limpia" class="form-control"><option value="0">Seleccione una opción </option><option value="1">SI</option><option value="2">NO</option></select> 
+							  </div>
+						  </div>
+						  <div class="col-lg-3 col-sm-3 text-left">
+							<p><b>Se le proporciona capacitacion a los operarios</b></p>
+						  </div>
+						  <div class="col-lg-3 col-sm-3 text-center">
+							  <div class="input-group">
+								 <div class="input-group-addon">
+									 <i class="fa fa-times-circle"></i>
+								 </div> <select name="operarios_capacitados" id="operarios_capacitados" class="form-control"><option value="0">Seleccione una opción </option><option value="1">SI</option><option value="2">NO</option></select> 
+							  </div>
+						  </div>
+						  
+					  </div>
+					  <div class="row">
+						  
+						  <div class="col-lg-3 col-sm-3 text-left">
+							<p><b>Los paneles de control se encuentran en buen estado</b></p>
+						  </div>
+						  <div class="col-lg-3 col-sm-3 text-center">
+							  <div class="input-group">
+								 <div class="input-group-addon">
+									 <i class="fa fa-times-circle"></i>
+								 </div> <select name="paneles_buen_estado" id="paneles_buen_estado" class="form-control"><option value="0">Seleccione una opción </option><option value="1">SI</option><option value="2">NO</option></select> 
+							  </div>
+						  </div>
+						  <div class="col-lg-3 col-sm-3 text-left">
+							<p><b>La maquinaria se usa de manera apropiada </b></p>
+						  </div>
+						  <div class="col-lg-3 col-sm-3 text-center">
+							  <div class="input-group">
+								 <div class="input-group-addon">
+									 <i class="fa fa-times-circle"></i>
+								 </div> <select name="uso_apropiado_maq" id="uso_apropiado_maq" class="form-control"><option value="0">Seleccione una opción </option><option value="1">SI</option><option value="2">NO</option></select> 
+							  </div>
+						  </div>
+						  
+					  </div>
+					  <div class="row">
+						  <div class="col-lg-3 col-sm-3 text-left">
+							<p><b>Antigüedad promedio de las maquinas (Años)</b></p>
+						  </div>
+						  <div class="col-lg-3 col-sm-3 text-center">
+							  <div class="input-group">
+								 <div class="input-group-addon">
+									 <i class="fa fa-hashtag"></i>
+								 </div> 
+								   <input class="form-control" type="number" name="antiguedad_promedio" min="1" max="99">
+							  </div>
+						  </div>
+					 	  <div class="col-lg-3 col-sm-3 text-left">
+							<p><b>Experiencia Promedio de operarios (Años)</b></p>
+						  </div>
+						  <div class="col-lg-3 col-sm-3 text-center">
+							  <div class="input-group">
+								 <div class="input-group-addon">
+									 <i class="fa fa-hashtag"></i>
+								 </div> 
+								   <input class="form-control" type="number" name="anios_experiencia_promedio" min="1" max="99">
+							  </div>
+						  </div>
+					  </div>
+					  <div class="row">
+						  <div class="col-lg-3 col-sm-3 text-left">
+							<p><b>Las conexiones se encuentran en buen estado </b></p>
+						  </div>
+						  <div class="col-lg-3 col-sm-3 text-center">
+							  <div class="input-group">
+								 <div class="input-group-addon">
+									 <i class="fa fa-times-circle"></i>
+								 </div> <select name="conexiones_buen_estado" id="conexiones_buen_estado" class="form-control"><option value="0">Seleccione una opción </option><option value="1">SI</option><option value="2">NO</option></select> 
+							  </div>
+						  </div>
+					 	  <div class="col-lg-3 col-sm-3 text-left">
+							<p><b>Promedio de horas de trabajo Diarias</b></p>
+						  </div>
+						  <div class="col-lg-3 col-sm-3 text-center">
+							  <div class="input-group">
+								 <div class="input-group-addon">
+									 <i class="fa fa-hashtag"></i>
+								 </div> 
+								   <input class="form-control" type="number" name="horas_diarias_promedio" min="1" max="99">
+							  </div>
+						  </div>
+					  </div>
+					  <div class="row">
+						  <div class="col-lg-3 col-sm-3 text-left">
+							<p><b> La cimentacion del montaje de la maquina es el adecuado </b></p>
+						  </div>
+						  <div class="col-lg-3 col-sm-3 text-center">
+							  <div class="input-group">
+								 <div class="input-group-addon">
+									 <i class="fa fa-times-circle"></i>
+								 </div> <select name="cimentacion_adecuado" id="cimentacion_adecuado" class="form-control"><option value="0">Seleccione una opción </option><option value="1">SI</option><option value="2">NO</option></select> 
+							  </div>
+						  </div>
+					 	  
+					  </div>
+					  
+					  <div class="row">
+						  <div class="col-lg-6 text-left">
+							  <h3>Mantenimiento maquinaria</h3>
+						  </div>
+					  </div>
+					  
+					  <div class="row">
+						   <div class="col-lg-3 text-left">
+							   <label>Preventivo</label>
+						  </div>
+						  <div class="col-lg-3 text-left">
+							   <label>Correctivo</label>
+						  </div>
+						  <div class="col-lg-3 text-left">
+							   <label>Predictivo</label>
+						  </div>
+						  <div class="col-lg-3 text-left">
+							   <label>Total</label>
+						  </div>
+						  
+					  </div>
+					  <div class="row">
+						   <div class="col-lg-3 text-left">
+							   <input type="number"  onChange="colors()" class="form-control ver" min="0" max="99" name="man_preventivo" id="man_preventivo" placeholder="0" >
+						  </div>
+						  <div class="col-lg-3 text-left">
+							   <input type="number" onChange="colors()" class="form-control ver" min="0" max="99" name="man_correctivo" id="man_correctivo" placeholder="0" >
+						  </div>
+						  <div class="col-lg-3 text-left">
+							    <input type="number" onChange="colors()" class="form-control ver" min="0" max="99" name="man_predictivo" id="man_predictivo" placeholder="0" >
+						  </div>
+						  <div class="col-lg-3 text-left">
+							   <input type="number" class="form-control total_man" name="man_total" id="man_total" disabled="true" value="0" >
+						  </div>
+						  
+					  </div>
+					   &nbsp;
+					  <div class="row">
+						  <div class="col-lg-3 col-sm-3 text-left">
+							<p><b> Se cuenta con una bitacora de mantenimiento </b></p>
+						  </div>
+						  <div class="col-lg-3 col-sm-3 text-center">
+							  <div class="input-group">
+								 <div class="input-group-addon">
+									 <i class="fa fa-times-circle"></i>
+								 </div> <select name="vitacora_man" id="vitacora_man" class="form-control"><option value="0">Seleccione una opción </option><option value="1">SI</option><option value="2">NO</option></select> 
+							  </div>
+						  </div>
+					 	  
+					  </div>
+					  <div class="row">
+						  <div class="col-lg-3 col-sm-3 text-left">
+							<p><b> Personal que realiza mantenimiento </b></p>
+						  </div>
+						  <div class="col-lg-3 col-sm-3 text-center">
+							  <div class="input-group">
+								 <div class="input-group-addon">
+									 <i class="fa fa-times-circle"></i>
+								 </div> <select name="personal_man" id="personal_man" class="form-control"><option value="0">Seleccione una opción </option><option value="1">Personal planta</option><option value="2">Firma especializada</option></select> 
+							  </div>
+						  </div>
+					 	  
+					  </div>
+					  
+					  <div class="row">
+						  <div class="col-lg-3 col-sm-3 text-left">
+							<p><b> Periodo de mantenimiento </b></p>
+						  </div>
+						  <div class="col-lg-3 col-sm-3 text-center">
+							  <div class="input-group">
+								 <div class="input-group-addon">
+									 <i class="fa fa-times-circle"></i>
+								 </div> <select name="periodo_man" id="periodo_man" class="form-control"><option value="0">Seleccione una opción </option><option value="1">Mensual</option><option value="2">Trimestral</option><option value="3">Semestral</option><option value="4">Anual</option></select> 
+							  </div>
+						  </div>
+					 	  
+					  </div>
+				  </div>
+				  
+				  
+				  <div class="row">
+					<div class="col-lg-12 page-header text-center">
+					  <h1>Equipo electrico y electronico</h1>
+					<input type="hidden" id="cuantos_equipos" name="cuantos_equipos" value="1">
+					</div>
+				  </div>
+				  <div class="container"> 
+					  <div class="row">
+						  <div class="col-lg-12 col-sm-12 text-center">
+							<textarea class="form-control" rows="5" form="general_evaluacion_riesgos_form" name="descripccion_equipos" maxlength="400" placeholder="Describa:
+								1. Estado general de los equipos.
+								2. Limpieza.
+								3. Ubicación Equipos.
+								4. Protecciones electricas." title="Describa:
+										1. Estado general de los equipos.
+										2. Limpieza.
+										3. Ubicación Equipos.
+										4. Protecciones electricas."></textarea>
+							 &nbsp;
+						  </div>
+					 </div>
+					  <div class="row">
+						  <div class="col-lg-6 text-left">
+							  <h3>Equipo electrico y electronico critico</h3>
+						  </div>
+					  </div>
+					  <div class="row">
+						 
+							  
+						   <fieldset id="equipo1" class="clonedInputEq">
+							    <div class="col-lg-2  text-left">
+							  		<label>Nombre</label>
+									<input  class="form-control" type="text" name="nombre_equipo_1" id="nombre_equipo_1" maxlength="30" />
+							   </div>
+							   <div class="col-lg-2  text-left">
+							   <label>Marca</label>
+							  <input  class="form-control" type="text" name="marca_equipo_1" id="marca_equipo_1" maxlength="20" />
+							   </div>
+							   <div class="col-lg-1  text-left">
+							   <label>Cantidad</label>
+							  <input  class="form-control" type="number" name="cantidad_equipo_1" id="cantidad_equipo_1" min="1" max="999" />
+							   </div>
+							   <div class="col-lg-2  text-left">
+							   <label>Edad equipo (años)</label>
+							  <input  class="form-control" type="number" name="edad_equipo_1" id="edad_equipo_1" min="1" max="999" />
+							   </div>
+							   <div class="col-lg-2  text-left">
+							   <label>Mantenimiento (meses)</label>
+							  <input  class="form-control" type="numebr" name="mantenimiento_equipo_1" id="mantenimiento_equipo_1" maxlength="2" />
+							   </div>
+							   <div class="col-lg-3  text-left">
+							   <label>Siniestralidad y reparaciones </label>
+							  <input  class="form-control" type="text" name="syr_equipo_1" id="syr_equipo_1" maxlength="50" />
+							   </div>
+							   
+						   </fieldset>
+						   <fieldset>
+							    <div class="col-lg-10  text-left">
+							   </div>
+							   <div class="col-lg-2  text-left">
+							  <label>Añadir equipo</label>
+							  <input  class="form-control" type="button" id="btnAddEq" value="+" />
+							  <input class="form-control" type="button" id="btnDelEq" value="-" />
+							   </div>
+						   </fieldset>
+							  
+						  
+					  </div>
+					  
+					  <div class="row">
+						  <div class="col-lg-6 text-left">
+							  <h3>Mantenimiento equipos</h3>
+						  </div>
+						  <div class="col-lg-6 text-left">
+							  <h3>Operación equipo</h3>
+						  </div>
+					  </div>
+					  <div class="row">
+						  <div class="col-lg-3 col-sm-3 text-left">
+							<p><b>Estado general del equipo</b></p>
+						  </div>
+						  <div class="col-lg-3 col-sm-3 text-center">
+							  <div class="input-group">
+								 <div class="input-group-addon">
+									 <i class="fa fa-times-circle"></i>
+								 </div> <select name="estado_equipo" id="estado_equipo" class="form-control"><option value="0">Seleccione una opción </option><option value="1">Bueno</option><option value="2">Regular</option><option value="3">Malo</option></select> 
+							  </div>
+						  </div>
+						  <div class="col-lg-3 col-sm-3 text-left">
+							<p><b>Se le proporciona capacitacion a los operarios</b></p>
+						  </div>
+						  <div class="col-lg-3 col-sm-3 text-center">
+							  <div class="input-group">
+								 <div class="input-group-addon">
+									 <i class="fa fa-times-circle"></i>
+								 </div> <select name="operarios_capacitados_eq" id="operarios_capacitados_eq" class="form-control"><option value="0">Seleccione una opción </option><option value="1">SI</option><option value="2">NO</option></select> 
+							  </div>
+						  </div>
+						  
+					  </div>
+					  <div class="row">
+						  
+						   <div class="col-lg-3 col-sm-3 text-left">
+							<p><b>Tipo Mantenimiento </b></p>
+						  </div>
+						  <div class="col-lg-3 col-sm-3 text-center">
+							  <div class="input-group">
+								 <div class="input-group-addon">
+									 <i class="fa fa-times-circle"></i>
+								 </div> <select name="tipo_mantenimiento_eq" id="tipo_mantenimiento_eq" class="form-control"><option value="0">Seleccione una opción </option><option value="1">Preventivo</option><option value="2">Correctivo</option><option value="3">Predictivo</option></select> 
+							  </div>
+						  </div>
+						  <div class="col-lg-3 col-sm-3 text-left">
+							<p><b>Los equipos se usan de manera apropiada </b></p>
+						  </div>
+						  <div class="col-lg-3 col-sm-3 text-center">
+							  <div class="input-group">
+								 <div class="input-group-addon">
+									 <i class="fa fa-times-circle"></i>
+								 </div> <select name="uso_apropiado_eq" id="uso_apropiado_eq" class="form-control"><option value="0">Seleccione una opción </option><option value="1">SI</option><option value="2">NO</option></select> 
+							  </div>
+						  </div>
+						  
+					  </div>
+					  <div class="row">
+						  <div class="col-lg-3 col-sm-3 text-left">
+							<p><b>Se cuenta con una bitacora de mantenimiento</b></p>
+						  </div>
+						  <div class="col-lg-3 col-sm-3 text-center">
+							  <div class="input-group">
+								 <div class="input-group-addon">
+									 <i class="fa fa-hashtag"></i>
+								 </div> 
+								  <select name="bitacora_equipos" id="bitacora_equipos" class="form-control"><option value="0">Seleccione una opción </option><option value="1">SI</option><option value="2">NO</option></select> 
+							  </div>
+						  </div>
+					 	  <div class="col-lg-3 col-sm-3 text-left">
+							<p><b>Experiencia Promedio de operarios (Años)</b></p>
+						  </div>
+						  <div class="col-lg-3 col-sm-3 text-center">
+							  <div class="input-group">
+								 <div class="input-group-addon">
+									 <i class="fa fa-hashtag"></i>
+								 </div> 
+								   <input class="form-control" type="number" name="anios_experiencia_promedio_eq" min="1" max="99">
+							  </div>
+						  </div>
+					  </div>
+					 <div class="row">
+						  <div class="col-lg-3 col-sm-3 text-left">
+							<p><b> Personal que realiza mantenimiento </b></p>
+						  </div>
+						  <div class="col-lg-3 col-sm-3 text-center">
+							  <div class="input-group">
+								 <div class="input-group-addon">
+									 <i class="fa fa-times-circle"></i>
+								 </div> <select name="personal_man_eq" id="personal_man_eq" class="form-control"><option value="0">Seleccione una opción </option><option value="1">Personal planta</option><option value="2">Firma especializada</option></select> 
+							  </div>
+						  </div>
+					 	  <div class="col-lg-3 col-sm-3 text-left">
+							<p><b>Promedio de horas de trabajo Diarias</b></p>
+						  </div>
+						  <div class="col-lg-3 col-sm-3 text-center">
+							  <div class="input-group">
+								 <div class="input-group-addon">
+									 <i class="fa fa-hashtag"></i>
+								 </div> 
+								   <input class="form-control" type="number" name="horas_diarias_promedio_eq" min="1" max="99">
+							  </div>
+						  </div>
+					  </div>
+					 <div class="row">
+						  <div class="col-lg-3 col-sm-3 text-left">
+							<p><b> Periodo de mantenimiento </b></p>
+						  </div>
+						  <div class="col-lg-3 col-sm-3 text-center">
+							  <div class="input-group">
+								 <div class="input-group-addon">
+									 <i class="fa fa-times-circle"></i>
+								 </div> <select name="periodo_man_eq" id="periodo_man_eq" class="form-control"><option value="0">Seleccione una opción </option><option value="1">Mensual</option><option value="2">Trimestral</option><option value="3">Semestral</option><option value="4">Anual</option></select> 
+							  </div>
+						  </div>
+					 	  
+					  </div>
+					  <div class="row">
+					  <div class="col-lg-3 col-sm-3 text-left">
+							<p><b>Existe stock de repuestos esenciales</b></p>
+						  </div>
+						  <div class="col-lg-3 col-sm-3 text-center">
+							  <div class="input-group">
+								 <div class="input-group-addon">
+									 <i class="fa fa-times-circle"></i>
+								 </div> <select name="stock_repuestos" id="stock_repuestos" class="form-control"><option value="0">Seleccione una opción </option><option value="1">SI</option><option value="2">NO</option></select> 
+							  </div>
+						  </div></div>
+					  
+					  
+					  <div class="row">
+						  <div class="col-lg-6 text-left">
+							  <h3>Protecciones</h3>
+						  </div>
+					  </div>
+					  
+					  <div class="row">
+						  <div class="col-lg-3 col-sm-3 text-left">
+							<p><b> Los equipos cuentan con protecciones eléctricas </b></p>
+						  </div>
+						  <div class="col-lg-3 col-sm-3 text-center">
+							  <div class="input-group">
+								 <div class="input-group-addon">
+									 <i class="fa fa-times-circle"></i>
+								 </div> <select name="protecciones_elec_eq" id="protecciones_elec_eq" class="form-control"><option value="0">Seleccione una opción </option><option value="1">SI</option><option value="2">NO</option></select> 
+							  </div>
+						  </div>
+					 	  
+					  </div>
+					  <div class="row">
+						  <div class="col-lg-3 col-sm-3 text-left">
+							<p><b> Los equipos cuentan con polo a tierra</b></p>
+						  </div>
+						  <div class="col-lg-3 col-sm-3 text-center">
+							  <div class="input-group">
+								 <div class="input-group-addon">
+									 <i class="fa fa-times-circle"></i>
+								 </div> <select name="polo_tierra_eq" id="polo_tierra_eq" class="form-control"><option value="0">Seleccione una opción </option><option value="1">SI</option><option value="2">NO</option></select> 
+							  </div>
+						  </div>
+					 	  
+					  </div>
+					  <div class="row">
+						  <div class="col-lg-3 col-sm-3 text-left">
+							<p><b> LLos equipos cuentan con supresor de picos de voltaje</b></p>
+						  </div>
+						  <div class="col-lg-3 col-sm-3 text-center">
+							  <div class="input-group">
+								 <div class="input-group-addon">
+									 <i class="fa fa-times-circle"></i>
+								 </div> <select name="supresor_picos_eq" id="supresor_picos_eq" class="form-control"><option value="0">Seleccione una opción </option><option value="1">SI</option><option value="2">NO</option></select> 
+							  </div>
+						  </div>
+					 	  
+					  </div>
+					  <div class="row">
+						  <div class="col-lg-3 col-sm-3 text-left">
+							<p><b> Los equipos cuentan con fuente auxiliar de energia (UPS) </b></p>
+						  </div>
+						  <div class="col-lg-3 col-sm-3 text-center">
+							  <div class="input-group">
+								 <div class="input-group-addon">
+									 <i class="fa fa-times-circle"></i>
+								 </div> <select name="ups_eq" id="ups_eq" class="form-control"><option value="0">Seleccione una opción </option><option value="1">SI</option><option value="2">NO</option></select> 
+							  </div>
+						  </div>
+					 	  
+					  </div>
+					  <div class="row">
+						  <div class="col-lg-3 col-sm-3 text-left">
+							<p><b>Planta Electrica</b></p>
+						  </div>
+						  <div class="col-lg-3 col-sm-3 text-center">
+							  <div class="input-group">
+								 <div class="input-group-addon">
+									 <i class="fa fa-times-circle"></i>
+								 </div> <select name="planta_elec_eq" id="planta_elec_eq" class="form-control"><option value="0">Seleccione una opción </option><option value="1">SI</option><option value="2">NO</option></select> 
+							  </div>
+						  </div>
+					 	  
+					  </div>
+					  <div class="row">
+						  <div class="col-lg-3 col-sm-3 text-left">
+							<p><b>Acsensores</b></p>
+						  </div>
+						  <div class="col-lg-3 col-sm-3 text-center">
+							  <div class="input-group">
+								 <div class="input-group-addon">
+									 <i class="fa fa-times-circle"></i>
+								 </div> <select name="ascensores_eq" id="ascensores_eq" class="form-control"><option value="0">Seleccione una opción </option><option value="1">SI</option><option value="2">NO</option></select> 
+							  </div>
+						  </div>
+					 	  
+					  </div>
+					  <div class="row">
+						  <div class="col-lg-3 col-sm-3 text-left">
+							<p><b>Transformadores</b></p>
+						  </div>
+						  <div class="col-lg-3 col-sm-3 text-center">
+							  <div class="input-group">
+								 <div class="input-group-addon">
+									 <i class="fa fa-times-circle"></i>
+								 </div> <select name="transformadores_eq" id="transformadores_eq" class="form-control"><option value="0">Seleccione una opción </option><option value="1">SI</option><option value="2">NO</option></select> 
+							  </div>
+						  </div>
+					 	  
+					  </div>
+					  <div class="row">
+						  <div class="col-lg-3 col-sm-3 text-left">
+							<p><b>Motobombas</b></p>
+						  </div>
+						  <div class="col-lg-3 col-sm-3 text-center">
+							  <div class="input-group">
+								 <div class="input-group-addon">
+									 <i class="fa fa-times-circle"></i>
+								 </div> <select name="motobombas_eq" id="motobombas_eq" class="form-control"><option value="0">Seleccione una opción </option><option value="1">SI</option><option value="2">NO</option></select> 
+							  </div>
+						  </div>
+					 	  
+					  </div>
+					  <div class="row">
+						  <div class="col-lg-3 col-sm-3 text-left">
+							<p><b>Estado de conexiones</b></p>
+						  </div>
+						  <div class="col-lg-3 col-sm-3 text-center">
+							  <div class="input-group">
+								 <div class="input-group-addon">
+									 <i class="fa fa-times-circle"></i>
+								 </div> 
+								   <input class="form-control" type="text" name="estado_conexiones" maxlength="30">
+							  </div>
+						  </div>
+					 	  
+					  </div>
+					  
+					  
+				  </div>
+
+				  
+				  <div class="row">
+					<div class="col-lg-12 page-header text-center">
+					  <h1>Información responsabilidad civil</h1>
+					</div>
+				  </div>
+				  <div class="container"> 
+					  <div class="row">
+						  <div class="col-lg-12 col-sm-12 text-center">
+							<textarea class="form-control" rows="5" form="general_evaluacion_riesgos_form" name="descripccion_info_RC" maxlength="400" placeholder=" ." title=""></textarea>
+							 &nbsp;
+						  </div>
+					 </div>
+					
+					  
+					  <div class="row">
+						  <div class="col-lg-6 text-left">
+							  <h3>Seguridad industrial</h3>
+						  </div>
+						  <div class="col-lg-6 text-left">
+							  <h3>Manejo Ambiental</h3>
+						  </div>
+					  </div>
+					  <div class="row">
+						  <div class="col-lg-3 col-sm-3 text-left">
+							<p><b>Se capacita al personal en manejo de riesgos industriales</b></p>
+						  </div>
+						  <div class="col-lg-3 col-sm-3 text-center">
+							  <div class="input-group">
+								 <div class="input-group-addon">
+									 <i class="fa fa-times-circle"></i>
+								 </div> <select name="operarios_capacitados_riesgos" id="operarios_capacitados_riesgos" class="form-control"><option value="0">Seleccione una opción </option><option value="1">SI</option><option value="2">NO</option></select> 
+							  </div>
+						  </div>
+						  <div class="col-lg-3 col-sm-3 text-left">
+							<p><b>Existe riesgo de contaminación</b></p>
+						  </div>
+						  <div class="col-lg-3 col-sm-3 text-center">
+							  <div class="input-group">
+								 <div class="input-group-addon">
+									 <i class="fa fa-times-circle"></i>
+								 </div> <select name="riesgo_contaminacion" id="riesgo_contaminacion" class="form-control"><option value="0">Seleccione una opción </option><option value="1">SI</option><option value="2">NO</option></select> 
+							  </div>
+						  </div>
+						  
+					  </div>
+					  <div class="row">
+						  
+						   <div class="col-lg-3 col-sm-3 text-left">
+							<p><b>El personal tiene la dotación adecuada </b></p>
+						  </div>
+						  <div class="col-lg-3 col-sm-3 text-center">
+							  <div class="input-group">
+								 <div class="input-group-addon">
+									 <i class="fa fa-times-circle"></i>
+								 </div> <select name="dotacion_adecuada" id="dotacion_adecuada" class="form-control"><option value="0">Seleccione una opción </option><option value="1">SI</option><option value="2">NO</option></select> 
+							  </div>
+						  </div>
+						  <div class="col-lg-3 col-sm-3 text-left">
+							<p><b>Se dispone correctamente de los residuos</b></p>
+						  </div>
+						  <div class="col-lg-3 col-sm-3 text-center">
+							  <div class="input-group">
+								 <div class="input-group-addon">
+									 <i class="fa fa-times-circle"></i>
+								 </div> <select name="diponen_residuos" id="diponen_residuos" class="form-control"><option value="0">Seleccione una opción </option><option value="1">SI</option><option value="2">NO</option></select> 
+							  </div>
+						  </div>
+						  
+					  </div>
+					  <div class="row">
+						  <div class="col-lg-3 col-sm-3 text-left">
+							<p><b>La dotación y herramientas de trabajo se encuentran en buen estado</b></p>
+						  </div>
+						  <div class="col-lg-3 col-sm-3 text-center">
+							  <div class="input-group">
+								 <div class="input-group-addon">
+									 <i class="fa fa-hashtag"></i>
+								 </div> 
+								  <select name="herramientas_buen_estado" id="herramientas_buen_estado" class="form-control"><option value="0">Seleccione una opción </option><option value="1">SI</option><option value="2">NO</option></select> 
+							  </div>
+						  </div>
+					 	  <div class="col-lg-3 col-sm-3 text-left">
+							<p><b>Se cumplen con normas y leyes</b></p>
+						  </div>
+						  <div class="col-lg-3 col-sm-3 text-center">
+							  <div class="input-group">
+								 <div class="input-group-addon">
+									 <i class="fa fa-hashtag"></i>
+								 </div> 
+								  <select name="cumplen_normas_leyes" id="cumplen_normas_leyes" class="form-control"><option value="0">Seleccione una opción </option><option value="1">SI</option><option value="2">NO</option></select> 
+							  </div>
+						  </div>
+					  </div>
+					 <div class="row">
+						  <div class="col-lg-3 col-sm-3 text-left">
+							<p><b>La actividad del riesgo representa algún peligro para las construcciones y poblaciones cercanas</b></p>
+						  </div>
+						  <div class="col-lg-3 col-sm-3 text-center">
+							  <div class="input-group">
+								 <div class="input-group-addon">
+									 <i class="fa fa-times-circle"></i>
+								 </div> <select name="act_representa_riesgo" id="act_representa_riesgo" class="form-control"><option value="0">Seleccione una opción </option><option value="1">SI</option><option value="2">NO</option></select> 
+							  </div>
+						  </div>
+					 	  <div class="col-lg-3 col-sm-3 text-left">
+							<p><b>Se genera emision de algun elemento al medio ambiente</b></p>
+						  </div>
+						  <div class="col-lg-3 col-sm-3 text-center">
+							  <div class="input-group">
+								 <div class="input-group-addon">
+									 <i class="fa fa-hashtag"></i>
+								 </div> 
+								  <select name="emisiones_medioambiente" id="emisiones_medioambiente" class="form-control"><option value="0">Seleccione una opción </option><option value="1">SI</option><option value="2">NO</option></select> 
+							  </div>
+						  </div>
+					  </div>
+					 <div class="row">
+						  <div class="col-lg-3 col-sm-3 text-left">
+							<p><b> Se cuenta con sistemas de gestión de calidad </b></p>
+						  </div>
+						  <div class="col-lg-3 col-sm-3 text-center">
+							  <div class="input-group">
+								 <div class="input-group-addon">
+									 <i class="fa fa-times-circle"></i>
+								 </div> <select name="sistemas_gestion_calidad" id="sistemas_gestion_calidad" class="form-control"><option value="0">Seleccione una opción </option><option value="1">SI</option><option value="2">NO</option></select> 
+							  </div>
+						  </div>
+					 	   <div class="col-lg-3 col-sm-3 text-left">
+							<p><b> Se vierte agua residual al alcantarillado </b></p>
+						  </div>
+						  <div class="col-lg-3 col-sm-3 text-center">
+							  <div class="input-group">
+								 <div class="input-group-addon">
+									 <i class="fa fa-times-circle"></i>
+								 </div> <select name="agua_resiudal_alcantarillado" id="agua_resiudal_alcantarillado" class="form-control"><option value="0">Seleccione una opción </option><option value="1">SI</option><option value="2">NO</option></select> 
+							  </div>
+						  </div>
+					 	  
+					  </div>
+					  <div class="row">
+					  	  <div class="col-lg-3 col-sm-3 text-left">
+							<p><b>Se cuenta con protocolos para el tranposrte de productos</b></p>
+						  </div>
+						  <div class="col-lg-3 col-sm-3 text-center">
+							  <div class="input-group">
+								 <div class="input-group-addon">
+									 <i class="fa fa-times-circle"></i>
+								 </div> <select name="protocolos_transporte_prod" id="protocolos_transporte_prod" class="form-control"><option value="0">Seleccione una opción </option><option value="1">SI</option><option value="2">NO</option></select> 
+							  </div>
+						  </div>
+						  <div class="col-lg-3 col-sm-3 text-left">
+							<p><b>Se recibien visitas de las autoridades respectivas</b></p>
+						  </div>
+						  <div class="col-lg-3 col-sm-3 text-center">
+							  <div class="input-group">
+								 <div class="input-group-addon">
+									 <i class="fa fa-times-circle"></i>
+								 </div> <select name="visitas_autoridades" id="visitas_autoridades" class="form-control"><option value="0">Seleccione una opción </option><option value="1">SI</option><option value="2">NO</option></select> 
+							  </div>
+						  </div>
+					  </div>
+					 
+					  
+					  
+				  </div>
+
+				  <div class="row">
+					<div class="col-lg-12 page-header text-center">
+					  <h1>Concepto Técnico</h1>
+					</div>
+				  </div>
+				  <div class="container"> 
+					  <div class="row">
+						  <div class="col-lg-12 col-sm-12 text-center">
+							<textarea class="form-control" rows="5" form="general_evaluacion_riesgos_form" name="descripccion_concepto_tecnico" maxlength="400" placeholder=" Los conceptos que se solicitan a continuación son netamente técnicos. El inspector de Riesgos no debe emitir ningún concepto de asegurabilidad ya que dicha labor es responsabilidad del área técnica de la compañía de Seguros." title=" Los conceptos que se solicitan a continuación son netamente técnicos. El inspector de Riesgos no debe emitir ningún concepto de asegurabilidad ya que dicha labor es responsabilidad del área técnica de la compañía de Seguros."></textarea>
+							 &nbsp;
+						  </div>
+					  </div>
+					
+					  
+					 
+					  
+					  
+				  </div>
+
+
+				    <div class="row">
+					<div class="col-lg-12 page-header text-center">
+					  <h1>Matriz de riesgos</h1>
+					</div>
+				  </div>
+				  <div class="container"> 
+					  <div class="row">
+						  <div class="col-lg-12 col-sm-12 text-center">
+							  <div class="row">
+								  <div class="col-lg-2 col-xs-2 text-center" ></div>
+								  <div class="col-lg-2 col-xs-2 text-center" style="background-color: yellow">a</div>
+								  <div class="col-lg-2 col-xs-2 text-center" style="background-color: yellow">a</div>
+								  <div class="col-lg-2 col-xs-2 text-center" style="background-color: orange">a</div>
+								  <div class="col-lg-2 col-xs-2 text-center" style="background-color: indianred">a</div>
+								  <div class="col-lg-2 col-xs-2 text-center" style="background-color: indianred">a</div>
+							 <div class="w-100"></div>
+								  <div class="col-lg-2 col-xs-2 text-center"></div>
+								  <div class="col-lg-2 col-xs-2 text-center" style="background-color: #FFF4A2">a</div>
+								  <div class="col-lg-2 col-xs-2 text-center" style="background-color: #FFF4A2">a</div>
+								  <div class="col-lg-2 col-xs-2 text-center" style="background-color: orange">a</div>
+								  <div class="col-lg-2 col-xs-2 text-center" style="background-color: indianred">a</div>
+								  <div class="col-lg-2 col-xs-2 text-center" style="background-color: indianred">a</div>
+							  </div>
+							   <div class="row">
+								  <div class="col-lg-2 col-xs-2 text-center"></div>
+								  <div class="col-lg-2 col-xs-2 text-center" style="background-color: greenyellow">a</div>
+								  <div class="col-lg-2 col-xs-2 text-center" style="background-color: greenyellow">a</div>
+								  <div class="col-lg-2 col-xs-2 text-center" style="background-color: orange">a</div>
+								  <div class="col-lg-2 col-xs-2 text-center" style="background-color: indianred">a</div>
+								  <div class="col-lg-2 col-xs-2 text-center" style="background-color: indianred">a</div>
+							  </div>
+							   <div class="row">
+								  <div class="col-lg-2 col-xs-2 text-center"></div>
+								  <div class="col-lg-2 col-xs-2 text-center" style="background-color: green">a</div>
+								  <div class="col-lg-2 col-xs-2 text-center" style="background-color: green">a</div>
+								  <div class="col-lg-2 col-xs-2 text-center" style="background-color: #FFF4A2">a</div>
+								  <div class="col-lg-2 col-xs-2 text-center" style="background-color: #FFF4A2">a</div>
+								  <div class="col-lg-2 col-xs-2 text-center" style="background-color: #FFF4A2">a</div>
+							  </div>
+							   <div class="row">
+								  <div class="col-lg-2 col-xs-2 text-center"></div>
+								  <div class="col-lg-2 col-xs-2 text-center" style="background-color: green">a</div>
+								  <div class="col-lg-2 col-xs-2 text-center" style="background-color: green">a</div>
+								  <div class="col-lg-2 col-xs-2 text-center" style="background-color: greenyellow">a</div>
+								  <div class="col-lg-2 col-xs-2 text-center" style="background-color: orange">a</div>
+								  <div class="col-lg-2 col-xs-2 text-center" style="background-color: orange">a</div>
+							  </div>
+							   <div class="row">
+								  <div class="col-lg-2 col-xs-2 text-center"></div>
+								  <div class="col-lg-2 col-xs-2 text-center"></div>
+								  <div class="col-lg-2 col-xs-2 text-center"></div>
+								  <div class="col-lg-2 col-xs-2 text-center"></div>
+								  <div class="col-lg-2 col-xs-2 text-center"></div>
+								  <div class="col-lg-2 col-xs-2 text-center"></div>
+							  </div>
+						  </div>
+					  </div>
+					
+					    <div class="row">
+							<div class="col-lg-12 page-header text-center">
+							  <h1>Observaciones generales</h1>
+							</div>
+						</div>
+				  		<div class="container"> 
+					 		<div class="row">
+						  		<div class="col-lg-12 col-sm-12 text-center">
+									<textarea class="form-control" rows="5" form="general_evaluacion_riesgos_form" name="descripccion_observaciones_generales" maxlength="1000" placeholder="" title=""></textarea>
+								 &nbsp;
+						 		 </div>
+					  		</div>
+					    </div>
+					 
+					  
+					  
+				  </div>
+
+				
+
+				  
+				  
+				  
+				  
+				   <div class="row">
+						<div class="container">
+							<div class="col-lg-3 ">
+							</div> 
+							<div class="col-lg-6 page-header text-center">
+								 <button type="submit" form="general_evaluacion_riesgos_form" class="btn btn-success form-control" value="Submit">Guardar</button>
+							</div>
+							<div class="col-lg-3">
+							</div> 
+					  </div>
+				  </div>
+				  
+				  
+				  
+			  </section>
+			</form>
+	</div>
+	<div class="tab-pane fade " id="contact" >
+
+
+	</div>
+</div>
+<!-- FOOTER -->
+<footer class="text-center">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <p>Copyright © Ingetech SAS. All rights reserved.</p>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- / FOOTER --> 
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+<script src="js/jquery-1.11.3.min.js"></script> 
+<!-- Include all compiled plugins (below), or include individual files as needed --> 
+<script src="js/bootstrap.js"></script>
+<script src="js/crear.js"></script>
+<script src="js/print.min.js"></script>
+<script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>	
+<script type="text/javascript" src="js/firebase.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.4.1/jspdf.debug.js" integrity="sha384-THVO/sM0mFD9h7dfSndI6TS0PgAGavwKvB5hAxRRvc0o9cPLohB0wb/PTA7LdUHs" crossorigin="anonymous"></script>
+<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui-1.8.17.custom.min.js"></script>
+
+  
+    
+</body>
+</html>
